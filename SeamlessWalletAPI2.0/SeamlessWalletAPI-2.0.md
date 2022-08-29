@@ -113,14 +113,15 @@ But there is some situations, we suggest return 0 of balance.
 ## Example of JsonText Content
 
 ### Betting case
+> We will send each request by bet, one request one bet.
 ```json
 {
   "Account": "player1",
   "Transactions": [
-    {//We will send each request by bet, one request one bet.
+    {
       "TransactionId": "566105bf-2349-439b-ac14-00becdcec0cc",
       "Amount": -100,
-      "OperationCode": 1 //bet
+      "OperationCode": 1
     }
   ]
 }
@@ -130,10 +131,10 @@ But there is some situations, we suggest return 0 of balance.
 If run not cancel, the bet would be settled at the end of game round. There are two kinds of situations which is winning or losing for a single bet.
 
 Amount = Sum(betAmount+settleAmount)
-
+> We will send each request by player, one request one player in one round.
 #### Win
 ```json
-{//We will send each request by player, one request one player in one round.
+{
   "Account": "player1",
   "BetFormId": 111,
   "Transactions": [
