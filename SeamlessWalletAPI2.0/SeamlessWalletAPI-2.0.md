@@ -181,7 +181,7 @@ There are three situation will trigger rollback case, our system will invoke api
 {
   "Account": "player1",
   "BetFormId": 111,
-  "ModifiedStatus": modified,
+  "ModifiedStatus": "modified",
   "Transactions": [
     {
       "TransactionId": "566105bf-2349-439b-ac14-00becdcec0cc",
@@ -201,7 +201,7 @@ There are three situation will trigger rollback case, our system will invoke api
 {
   "Account": "player2",
   "BetFormId": 111,
-  "ModifiedStatus": modified,
+  "ModifiedStatus": "modified",
   "Transactions": [
     {
       "TransactionId": "566105bf-2349-439b-ac14-00becdcec0cc",
