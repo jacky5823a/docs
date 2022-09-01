@@ -66,6 +66,7 @@ HTTP Request Method: Post
 | Column | Format |Description |
 | -------- | -------- | -------- |
 | Account | string | player's account |
+| ModifiedStatus | string | modified or canceled (*Rollback only*) |
 | BetFormId | long | *Settlement only* |
 | Transactions| [TransactionItem](#transactionItem)[]|[TransactionItem](#transactionItem) Array|
 
@@ -89,7 +90,7 @@ HTTP Request Method: Post
 ### Response
 
 > For security reason, response should return back in **3** seconds, if not, task will cancel.
-> We will notify timeout message in [ResponseJson] such as  **[Response Timeout] Response time over 3 seconds, Task Canceled.**
+> We will record timeout message in [ResponseJson] such as  **[Response Timeout] Response time over 3 seconds, Task Canceled.**
 > 
 | Column | Format | Description |
 | -------- | --------  | -------- |
