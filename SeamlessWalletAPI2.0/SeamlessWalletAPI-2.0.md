@@ -67,7 +67,7 @@ HTTP Request Method: Post
 | -------- | -------- | -------- |
 | Account | string | player's account |
 | ModifiedStatus | string | modified or canceled (*Rollback only*) |
-| BetFormId | long | *Settlement only* |
+| BetFormId | long | Group Id by player in Single run *(Settlement) (Rollback)* |
 | Transactions| [TransactionItem](#transactionItem)[]|[TransactionItem](#transactionItem) Array|
 
 #### TransactionItem
