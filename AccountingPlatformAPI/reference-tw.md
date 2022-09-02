@@ -55,7 +55,7 @@
 | ---- | ------ | ------ |
 | 1    | 中獎   | 玩家在任一注區有贏錢 |
 | 2    | 未中獎 | 玩家沒有在任何注區贏錢 |
-| 3    | 和局   | 輸贏金額 0 且 [有效金額](有效投注金額計算) 0|
+| 3    | 和局   | 輸贏金額 0 且 [有效金額](#https://github.com/jacky5823a/docs/blob/master/AccountingPlatformAPI/reference-tw.md#%E6%9C%89%E6%95%88%E6%8A%95%E6%B3%A8%E9%87%91%E9%A1%8D%E8%A8%88%E7%AE%97) 0|
 | ~~4~~   | ~~進行中~~ | 非同步注單不會有進行中的單 |
 | 6    | 取消單 | |
 | 7    | 改單   | |
@@ -160,8 +160,8 @@
 | Property  | Type | Description |
 | ----- | -------------------- | -------------------- |
 | odds | number | 賠率 |
-| spotId | int | [注區 ID](#Spot) |
-| spotName | number | [注區代碼](#Spot) |
+| spotId | int | [注區 ID](#注區) |
+| spotName | number | [注區代碼](#注區) |
 | betAmount | int |  該注區下注金額總和 |
 | loseWinAmount | int | 該注區輸贏金額總和 |
 
@@ -493,7 +493,15 @@
 |280 | Even | 雙 | 
 
 ## 有效投注金額計算
-- 無風險注區(莊閒、大小...)有效金額為相對注區下注金額相減，例如莊 $100 及閒 $200，有效金額為 $200 - $100 = $100
+- 無風險注區(莊閒、大小...)有效金額為相對注區下注金額相減，例如莊 100 及閒 200，有效金額為 100 (200 - 100 = 100)
 - 百家開和局投注莊、閒有效金額為 0
 - 龍虎開和局投注龍、虎有效金額為投注金額的一半
-- 上述規則外其餘有效金額 = 投注金額
+- 上述規則外，其餘有效金額(validBetAmount) = 投注金額(BetAmount)
+
+## 桌台資料
+
+| Property  | Type | Description |
+| ----- | -------------------- | -------------------- |
+| TableId | string | 桌台編號，請參考文件主頁 |
+| GameType | string | 遊戲種類：Baccarat、DragonTiger、Roulette、Sedie、SpeedSicbo |
+| IsEnabled | boolean | 是否啟用 |
