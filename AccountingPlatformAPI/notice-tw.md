@@ -34,8 +34,8 @@
 
 | Parameter   | Type   | Description |
 | ----------- | ------ | ----------- |
-| `ErrorCode` | String | 狀態碼      |
-| `Message`   | String | 狀態描述    |
+| `ErrorCode` | String | 錯誤代碼      |
+| `Message`   | String | 錯誤訊息    |
 | `Data`      | Object | 數據資料    |
 
 ```json
@@ -50,5 +50,5 @@
 
 ## 其他常見問題
 - 使用 GET method，請將參數放入 [query string](https://en.wikipedia.org/wiki/Query_string)，請勿在 message body 放入參數，有些雲端服務會阻擋 message body 帶有參數的 GET 請求，更多資訊請參考 [HTTP GET method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET)。`AgentId` 和 `Key` 則放入 query string 中，`Key` 產生方式請參考下面的 [加密流程](#加密流程)
-- 使用 POST method 請將參數放入 message body，格式為 JSON 格式，請勿使用 `form-data`、`x-www-form-urlencoded` 等格式。`AgentId` 和 `Key` 則放入 message body 中，`Key` 產生方式請參考下面的[加密流程](#加密流程)
+- 使用 POST method 請將參數放入 message body，格式為 JSON 格式，請勿使用 `form-data`、`x-www-form-urlencoded` 等格式。
 
