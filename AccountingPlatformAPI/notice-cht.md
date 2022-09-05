@@ -1,25 +1,24 @@
 # 注意事項
 
-使用 API 前請詳閱下列注意事項
+## 代理後台
+
+請參考 [代理後台操作手冊](../AgentBackend/manual-cht.md) 了解更多內容
 
 ## 個人 API 資訊
 
-請登入代理後台，在開發人員文件頁面可找到 `API URL`、`Agent ID` 跟 `Agent Key`
+代理後台 [開發者專區/開發者文件](../AgentBackend/manual-cht.md#開發者專區) 頁面可查看 `API Host`、`Agent ID` 跟 `Agent Key`，請務必妥善保存 `Agent Key`
 
 ## IP 限制
 
-所有API只通過貴方所提供給我方的IP,除此之外的IP皆無法通過 
+- 所有 API 只通過代理所設定的 IP 白名單，除此之外的 IP 皆無法通過，可在代理後台 [帳號管理/個人資料](../AgentBackend/manual-cht.md#代理基本資料) 查看自身的 IP 白名單，下層代理的白名單可至 `帳號管理/代理管理` 頁面設定 
+- 若要調整自身的 IP 白名單，請上層代理協助修改
 
-## 語系
-平台API支援語系切換,只需 request 參數中加上 `lang` 或 `ApiLang` 參數
+## API 語系
+API 支援語系切換,只需 request 參數中加上 `ApiLang` 或 `lang`參數
 
 - zh-CN:簡體(預設值)
 - zh-TW:繁體
 - en-US:英文
-
-## API 調用精度限制
-
-所有的點數值只保留小數點後兩位, 例如：1000.23, 89.32, 1002304.89 
 
 ## Request
 - 所有請求需要包含以下參數
