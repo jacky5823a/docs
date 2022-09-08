@@ -2,7 +2,7 @@
 
 ## Profile of agent
 
-The personal profile is shown on the `Account Management/Profile` page. If you'd like to see the downline agents' profile, please go to the `Account Management/Agent Management` page.
+The personal profile is shown on the `Account Management/Profile` page. If you'd like to see the downline agents' profile, please go to the `Account Management/Agent Management` page. Every agent has his own profile.
 
 - Percentage: Take the percentage of profit which is the win/loss of members, the rest would be given to the upline
 - Banned country: The IPs can not enter the game in the banned counties list
@@ -15,7 +15,7 @@ The personal profile is shown on the `Account Management/Profile` page. If you'd
 
 ## Game setting of agent
 
-Personal Game Setting is shown on the `Account Management/Personal Game Setting` page. If you'd like to see the downline agents' game setting, please go to the `Account Management/Agent Management` page.
+Personal Game Setting is shown on the `Account Management/Personal Game Setting` page. If you'd like to see the downline agents' game setting, please go to the `Account Management/Agent Management` page. Every agent has his own game setting.
 
 - Activate game: Disallow to deactivate. The game/member/table limit/logo/seamless callbacks setting need to activate the game first
 - Table setting: Please refer to the table No. from our game UI. Members of the agent won't enter the game table if disable the table No.. The game tables which disabled also won't be shown in game lobby
