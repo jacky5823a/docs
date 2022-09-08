@@ -7,9 +7,11 @@ The personal profile is shown on the `Account Management/Profile` page. If you'd
 - Percentage: Take the percentage of profit which is the win/loss of members, the rest would be given to the upline
 - Banned country: The IPs can not enter the game in the banned counties list
 - Transaction method: Cash(transfer wallet) or seamless wallet
-- Currency and quota: The sum of wins form members. Members of the agent won't take bets if over the quota limit. The the quota limit would be reset at 00:00:00 on the first day of every month(UTC+8), the downline agents also take the quota of upline
+- Currency and quota:
+    Currency: Support multi-currencies, and there is one default currency for a agent. The member of the agent only has one currency.
+    Quota: The sum of wins from members. Members of the agent won't take bets if over the quota limit. The the quota limit would be reset at 00:00:00 on the first day of every month(UTC+8), the downline agents also take the quota of upline
 - Default currency: Every agent has one default currency. If there is no currency parameter in request when invoking our apis, our system will use the default currency of the agent.
-- Whitelist IP: The ip form the request of the agent must in the whitelist IP list when invoking our apis(* sign means all ips are allowed from the request of the agent)
+- Whitelist IP: The ip from the request of the agent must in the whitelist IP list when invoking our apis(* sign means all ips are allowed from the request of the agent)
 
 ## Game setting of agent
 
@@ -22,6 +24,10 @@ Personal Game Setting is shown on the `Account Management/Personal Game Setting`
 - Switch setting: Set the member login switch for downline agents. Members of the agent cannot login if disabled
 - Percentage setting: Set the percentage of profit for downline agents. One future percentage available(undelivered), our systems calculate the last month of delivery report when the routine maintenance on the first Monday every month. This page also provides the last 6 percentage records which are delivered. Able to modify the last 3 delivered percentage and our system will recalculate the delivery report of the modified month.
 - Member management: Show all the members of personal and downline agents, but only personal members allow to modify member status and table limit.
+
+## Downline Agents
+
+There are four levels(Master Director/Director/General Agent/Agent). The `Account Management/Agent Management` page provides a place to manage the downline agents.
 
 ## Billing Account Management
 Check the account inquiry, bet record, transfer record, delivery record
