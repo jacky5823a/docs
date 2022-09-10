@@ -7,7 +7,7 @@
 | Baccarat       | 1                |                    |
 | Sic-Bo         | 2                | under development    |
 | Roulette       | 3                |                    |
-| Multi-Tables       | 4                |                    |
+| Multi-Tables       | 4                |  only using when member login game, the wager hasn't this type                 |
 | Dragon Tiger   | 5                |                    |
 | Se Die         | 6                |                    |
 | Speed Sic-Bo   | 7                | under development      |
