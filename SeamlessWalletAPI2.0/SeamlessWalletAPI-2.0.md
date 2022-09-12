@@ -65,6 +65,8 @@ HTTP Request Method: Post
 #### JsonText Content
 | Column | Format |Description |
 | -------- | -------- | -------- |
+| GameTypes | string | [Game Types](#https://github.com/jacky5823a/docs/blob/master/AccountingPlatformAPI/XG/accounting-platform-en.md#notice) |
+| TableId | string | [Table ID](#https://github.com/jacky5823a/docs/blob/master/AccountingPlatformAPI/XG/accounting-platform-en.md#notice) by game type in game |
 | Account | string | player's account |
 | ModifiedStatus | string | modified or canceled (*Rollback only*) |
 | BetFormId | long | Group Id by player in Single run *(Settlement) (Rollback)* |
@@ -117,6 +119,8 @@ But there is some situations, we suggest return 0 of balance.
 > We will send each request by bet, one request one bet.
 ```json
 {
+  "GameTypes": "Baccarat",
+  "TableId,": "F",
   "Account": "player1",
   "Transactions": [
     {
@@ -241,9 +245,9 @@ MD5(AgentSecret + UnixTimeSeconds + JsonText)
 > AgentSecret is AgentKey.
 ```csharp
 var agentSecret = "exampleSecrect";
-var jsonText = "{\"Account\":\"player1\",\"Transactions\":[{\"TransactionId\":\"566105bf-2349-439b-ac14-00becdcec0cc\",\"Amount\":-100,\"OperationCode\":1},{\"BetListId\":8889,\"Amount\":-100,\"OperationCode\":1}]}";
-//jsonText is {"Account":"player1","Transactions":[{"TransactionId":"566105bf-2349-439b-ac14-00becdcec0cc","Amount":-100,"OperationCode":1},{"BetListId":8889,"Amount":-100,"OperationCode":1}]}
+var jsonText = "{\"GameTypes\":\"Baccarat\",\"TableId\":\"F\",\"Account\":\"test111\",\"Transactions\":[{\"TransactionId\":\"6a69be67-36ed-4828-b117-8888473d8440\",\"Amount\":-2000.0,\"OperationCode\":1}]}";
+//jsonText is {"GameTypes":"Baccarat","TableId":"F","Account":"test111","Transactions":[{"TransactionId":"6a69be67-36ed-4828-b117-8888473d8440","Amount":-2000.0,"OperationCode":1}]}
 var unixTimeSeconds = 1647920033;
  var signature = MD5($"{agentSecret}{unixTimeSeconds}{jsonText}");
-//signature is 21c66cb218146d2c6c8a576bd0a8982d
+//signature is ab36e37737858f0b2b4079cdcea2d5e7
 ```
