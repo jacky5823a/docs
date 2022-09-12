@@ -6,8 +6,8 @@
     - [Member&Agent](#Member&Agent)
     - [Wager](#Wager)
     - [Transfer](#Transfer)
-    - [Seamless2.0](#Seamless2.0)
-    - [Seamless1.x](#Seamless1.x)
+    - [Seamless2.0](#Seamless20)
+    - [Seamless1.x](#Seamless1x)
 - [Reference of API](../reference-en.md)
 
 ## Notice
