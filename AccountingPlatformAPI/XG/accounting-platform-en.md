@@ -3,7 +3,7 @@
 - [Notice](#Notice)
 - [Encryption Flow](#Encryption-Flow)
 - [API Spec](#API-Spec) 
-    - [Member/Agent](#Member/Agent)
+    - [Member&Agent](#Member&Agent)
     - [Wager](#Wager)
     - [Transfer](#Transfer)
     - [Seamless2.0](#Seamless2.0)
@@ -38,9 +38,9 @@ If the language of library hasn't supported or you'd like to handle it yourself,
 
 ## API Spec
 
-### Member/Agent
+### Member&Agent
 
-Provide creating member, member login, managing member or agent data, please refer to [Member/Agent API](https://staging-agent.jetcafe.life/swagger/public/index.html?lang=en#/Member%2FAgent)
+Provide creating member, member login, managing member or agent data, please refer to [Member&Agent API](https://staging-agent.jetcafe.life/swagger/public/index.html?lang=en#/Member%2FAgent)
 
 ### Wager
 
@@ -60,7 +60,7 @@ Only transfer wallet agents available, please refer to [Transfer API](https://st
 
 ### Seamless1.x
 
-- Only Seamless wallet agents available. 
+- Only Seamless wallet agents available. The 1.0 version would be deprecate after 2022-10-17, please upgrade to the 1.1 or 2.0 version.
 - Please setting the seamless callbacks(balance/bet/settle/rollback) on the personal game setting page of the backstage. 
 - Refer to the [How to handle the balance of members](../../SeamlessWalletAPI1.x/handle-balance.md) and [XG Seamless Wallet API ](https://app.swaggerhub.com/apis/x-gaming-bet/xg-seamless_wallet_api_en/1.1) documents to implement all of seamless callbacks.
 - If the game round canceled before settlement, our system will invoke the rollback callback.

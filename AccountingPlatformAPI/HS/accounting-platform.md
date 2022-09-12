@@ -3,11 +3,11 @@
 - [注意事項](#注意事項)
 - [加密流程](#加密流程)
 - [API規格](#API規格) 
-    - [會員/代理](#會員/代理)
+    - [會員&代理](#會員&代理)
     - [注單查詢](#注單查詢)
     - [轉帳](#轉帳)
-    - [單一錢包2.0](#單一錢包2.0)
-    - [單一錢包1.x](#單一錢包1.x)
+    - [單一錢包2.0](#單一錢包2-0)
+    - [單一錢包1.x](#單一錢包1-x)
 - [API 欄位參考資料](../reference-cht.md)
 
 ## 注意事項
@@ -55,9 +55,9 @@
 
 ## API 規格 
 
-### 會員/代理
+### 會員&代理
 
-提供建立會員、會員登入、修改會員/代理等操作，詳見 [會員/代理 API](https://staging-agent.olacak.live/swagger/public/index.html#/%E6%9C%83%E5%93%A1%2F%E4%BB%A3%E7%90%86)
+提供建立會員、會員登入、修改會員/代理等操作，詳見 [會員&代理 API](https://staging-agent.olacak.live/swagger/public/index.html#/%E6%9C%83%E5%93%A1%26%E4%BB%A3%E7%90%86)
 
 ### 注單查詢
 
@@ -72,15 +72,15 @@
 - 單一錢包代理才能使用，相較於 1.x 版，2.0 版只需實作兩支 callbacks，專注於會員金額上的更新，加密方式也更精簡和彈性
 - 到後台個人遊戲設定單一錢包 callbacks(getBalance/updateBalance)
 - 參考 [SeamlessWallet API 2.0](../../SeamlessWalletAPI2.0/SeamlessWalletAPI-2.0.md) 文件實作 `Get Balance` 及 `Update Balance` callbacks
-- update balance 只會呼叫一次，未避免發生重複結算金額，我方遇到 time out 或非預期的 response 等錯誤時不會重新呼叫，請錢包方定期調用 [GetRequestHistoryByTime api](https://staging-agent.olacak.live/swagger/public/index.html#/%E5%96%AE%E4%B8%80%E9%8C%A2%E5%8C%852.0/post_api_keno_api__GameCode__GetRequestHistoryByTime) 檢查我方呼叫失敗的紀錄，並依據 `RequestJson` 內容修正玩家額度
+- update balance 只會呼叫一次，未避免發生重複結算金額，我方遇到 time out 或非預期的 response 等錯誤時不會重新呼叫，請錢包方定期調用 [GetRequestHistoryByTime api](https://staging-agent.olacak.live/swagger/public/index.html#/%E5%96%AE%E4%B8%80%E9%8C%A2%E5%8C%852.0/post_api_keno_api_casino_GetRequestHistoryByTime) 檢查我方呼叫失敗的紀錄，並依據 `RequestJson` 內容修正玩家額度
 - 請提供貴系統測試環境(staging)的測試帳號，我方將會安排測試 callbacks 是否正常運作
 
 ### 單一錢包1.x
 
-- 單一錢包代理才能使用
+- 單一錢包代理才能使用，1.0 版本於 2022-10-17 後將被棄用，請升級到 1.1 或 2.0
 - 到後台個人遊戲設定單一錢包 callbacks(balance/bet/settle/rollback)
 - 參考 [How to handle the balance of members](../../SeamlessWalletAPI1.x/handle-balance.md) 和 [XG Seamless Wallet API](https://app.swaggerhub.com/apis/x-gaming-bet/xg-seamless_wallet_api/1.1) 文件實作各類型 callbacks
 - 如果注單在結算前被取消，我方會調用 rollback 通知錢包方的系統
-- 如果注單在結算後被取消，我方不會通知錢包方，錢包方必須定期呼叫 [取得會員單注紀錄 API](https://staging-agent.olacak.live/swagger/public/index.html#/%E5%96%AE%E4%B8%80%E9%8C%A2%E5%8C%851.x/post_api_keno_api__GameCode__GetReplenishmentByTime) 檢查下注的 `ModifiedStatus`，並處理會員的額度
+- 如果注單在結算後被取消，我方不會通知錢包方，錢包方必須定期呼叫 [取得會員單注紀錄 API](https://staging-agent.olacak.live/swagger/public/index.html#/%E5%96%AE%E4%B8%80%E9%8C%A2%E5%8C%851.x/post_api_keno_api_casino_GetReplenishmentByTime) 檢查下注的 `ModifiedStatus`，並處理會員的額度
 - 請提供貴系統測試環境(staging)的測試帳號，我方將會安排測試 callbacks 是否正常運作
 

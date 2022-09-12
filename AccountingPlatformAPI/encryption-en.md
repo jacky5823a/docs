@@ -40,7 +40,7 @@ Key = {6 arbitrary characters} + MD5(all request parameter list strings + KeyG) 
 The following is an example for encryption flow which using nodejs and [Luxon](https://github.com/moment/luxon)
 
 
-```javascript=
+```javascript
 const agentId = 'Your AgentId';
 const agentKey = 'Your AgentKey';
 

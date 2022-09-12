@@ -21,7 +21,7 @@ Append the `ApiLang` or `lang` parameter in the request if you'd like to switch 
 - en: English
 
 ## Request
-- All requests include the following parameters
+- All requests include the following parameters. Please follow the encryption flow to generate the `Key`.
 
 | Parameter | Type   | Description    |
 | --------- | ------ | -------------- |
@@ -48,5 +48,5 @@ Append the `ApiLang` or `lang` parameter in the request if you'd like to switch 
 ```
 
 ## Other FAQ
-- Please put parameters in [query string](https://en.wikipedia.org/wiki/Query_string) for GET method. It would be blocked if put parameters in message body for GET method by some cloud providers. Please refer to [HTTP GET method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) to get more information. Remember to put `AgentId` and `Key` in query string for GET method. Please follow the [Encryption flow](#Encryption-flow) to generate the `Key`.
-- Please put parameters in message body for POST method. And whose format is JSON, **DO NOT** using `form-data` or `x-www-form-urlencoded` format. Remember to put `AgentId` and `Key` in request body. Please follow the [Encryption flow](#Encryption-flow) to generate the `Key`.
+- Please put parameters in [query string](https://en.wikipedia.org/wiki/Query_string) for GET method. It would be blocked if put parameters in message body for GET method by some cloud providers. Please refer to [HTTP GET method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) to get more information.
+- Please put parameters in message body for POST method. And whose format is JSON, **DO NOT** using `form-data` or `x-www-form-urlencoded` format.
