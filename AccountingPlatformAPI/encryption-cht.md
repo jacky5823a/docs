@@ -38,7 +38,7 @@ Key = {6個任意字元} + MD5(所有請求參數串 + KeyG) + {6個任意字元
 
 以下使用 nodejs 及 [Luxon](https://github.com/moment/luxon) 時間套件進行加密範例
 
-```javascript=
+```javascript
 const agentId = 'Your AgentId';
 const agentKey = 'Your AgentKey';
 
