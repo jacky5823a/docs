@@ -3,7 +3,7 @@
 - [Notice](#Notice)
 - [Encryption Flow](#Encryption-Flow)
 - [API Spec](#API-Spec) 
-    - [Member&Agent](#Member&Agent)
+    - [Member&Agent](#MemberAgent)
     - [Wager](#Wager)
     - [Transfer](#Transfer)
     - [Seamless2.0](#Seamless20)
