@@ -156,9 +156,9 @@ The playing card code is a combination of suits and numbers, ex. SA stands for A
 | ----- | -------------------- | -------------------- |
 | odds | number | The odd of the spot |
 | spotId | int | [Spot](#Spot) |
-| spotName | number | [Spot](#Spot) |
-| betAmount | int |  Sum of bet amount by spot |
-| loseWinAmount | int | Sum of lose/win by spot |
+| spotName | string | [Spot](#Spot) |
+| betAmount | number |  Sum of bet amount by spot |
+| loseWinAmount | number | Sum of win/lose by spot |
 
 If a member place Banker 100, Banker 100, Banker Pair 100, there are two records in `BetType` which are Banker 200 and Banker Pair 100 
 
@@ -501,3 +501,43 @@ If a member place Banker 100, Banker 100, Banker Pair 100, there are two records
 | TableId | string | Please refer to the main doc |
 | GameType | string | Baccarat、DragonTiger、Roulette、Sedie、SpeedSicbo |
 | IsEnabled | boolean |  |
+
+## Transactions
+
+All of single bets in a wager by a player
+
+| Property  | Type | Description |
+| ----- | -------------------- | -------------------- |
+| transactionId | string | Transaction ID |
+| spotId | int | [Spot](#Spot) |
+| spotName | string | [Spot](#Spot) |
+| betAmount | number |  The bet amount |
+| payoffAmount | number | The win/lose amount |
+
+If a member place Banker 100, Banker 100, Banker Pair 100, there are three records in `Transactions`.
+
+```json
+[
+  {
+    "transactionId": "c4a24b88-2405-4b00-910c-a252405e5945",
+    "spotId": 1,
+    "spotName": "Banker",
+    "betAmount": 100,
+    "payoffAmount": -100
+  },
+  {
+    "transactionId": "1feeb813-5bd5-468c-be48-0355f0116cd8",
+    "spotId": 1,
+    "spotName": "Banker",
+    "betAmount": 100,
+    "payoffAmount": -100
+  },
+  {
+    "transactionId": "6b74b2ce-dca8-4a71-9b94-4a410d5a3568",
+    "spotId": 1,
+    "spotName": "BankerPair",
+    "betAmount": 100,
+    "payoffAmount": -100
+   }
+]
+```

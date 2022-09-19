@@ -160,9 +160,9 @@
 | ----- | -------------------- | -------------------- |
 | odds | number | 賠率 |
 | spotId | int | [注區 ID](#注區) |
-| spotName | number | [注區代碼](#注區) |
-| betAmount | int |  該注區下注金額總和 |
-| loseWinAmount | int | 該注區輸贏金額總和 |
+| spotName | string | [注區代碼](#注區) |
+| betAmount | number |  該注區下注金額總和 |
+| loseWinAmount | number | 該注區輸贏金額總和 |
 
 若玩家依序下 `莊 100`, `莊 100`, `莊對 100`，這裡會出現兩筆紀錄，莊 200 和 莊對 100
 
@@ -504,3 +504,43 @@
 | TableId | string | 桌台編號，請參考文件主頁 |
 | GameType | string | 遊戲種類：Baccarat、DragonTiger、Roulette、Sedie、SpeedSicbo |
 | IsEnabled | boolean | 是否啟用 |
+
+## 單注列表
+
+本欄位列出該玩家該局各單注下注情形
+
+| Property  | Type | Description |
+| ----- | -------------------- | -------------------- |
+| transactionId | string | 單注 ID |
+| spotId | int | [注區 ID](#注區) |
+| spotName | string | [注區代碼](#注區) |
+| betAmount | number |  下注金額 |
+| payoffAmount | number | 輸贏金額 |
+
+若玩家依序下 `莊 100`, `莊 100`, `莊對 100`，這裡會出現三筆紀錄
+
+```json
+[
+  {
+    "transactionId": "c4a24b88-2405-4b00-910c-a252405e5945",
+    "spotId": 1,
+    "spotName": "Banker",
+    "betAmount": 100,
+    "payoffAmount": -100
+  },
+  {
+    "transactionId": "1feeb813-5bd5-468c-be48-0355f0116cd8",
+    "spotId": 1,
+    "spotName": "Banker",
+    "betAmount": 100,
+    "payoffAmount": -100
+  },
+  {
+    "transactionId": "6b74b2ce-dca8-4a71-9b94-4a410d5a3568",
+    "spotId": 1,
+    "spotName": "BankerPair",
+    "betAmount": 100,
+    "payoffAmount": -100
+   }
+]
+```
