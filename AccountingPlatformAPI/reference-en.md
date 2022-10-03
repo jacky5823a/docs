@@ -84,31 +84,6 @@
 | ja    | Japanese             |
 | vn    | Vietnamese           |
 
-## Currency
-
-> The table below is supported currencies
->
-> The currency code is refer to [ISO_4217](https://en.wikipedia.org/wiki/ISO_4217)
-
-| Code | Currency     |
-| ---- | -------- |
-| CNY  | Chinese yuan   |
-| USD  | United States dollar     |
-| THB  | Thai baht     |
-| IDR  | Indonesian rupiah   |
-| MYR  | Malaysian ringgit     |
-| VND  | Vietnamese đồng   |
-| KRW  | South Korean won     |
-| SGD  | Singapore dollar |
-| NZD  | New Zealand dollar |
-| AUD  | Australian dollar     |
-| JPY  | Japanese yen     |
-| INR  | Indian rupee |
-|HKD   |Hong Kong dollar      |
-|USDT |Tether  |
-|PHP|Philippine peso|
-| KIDR  | 1000 IDR   |
-| KVND  | 1000 VND   |
 
 ## Game Result
 

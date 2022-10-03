@@ -17,13 +17,35 @@ Please read the following notes before using our API.
 - Please read the [Notice](../notice-en.md) to get more information.
 - The following table presents the Table ID by game type in game. 
 
-| Game Type | Table ID  |
-| --- | --- |
-| Baccarat | E, F, G, H, I, J, K, L, O, P, X |
-| DragonTiger | A |  
-| Roulette | B |  
-| Sicbo | W, V |  
-| Sedie | C, D |
+    | Game Type | Table ID  |
+    | --- | --- |
+    | Baccarat | E, F, G, H, I, J, K, L, O, P, X |
+    | DragonTiger | A |  
+    | Roulette | B |  
+    | Sicbo | W, V |  
+    | Sedie | C, D |
+
+- The table below is supported currencies, and the currency code is refer to [ISO_4217](https://en.wikipedia.org/wiki/ISO_4217)
+
+    | Code | Currency     |
+    | ---- | -------- |
+    | CNY  | Chinese yuan   |
+    | USD  | United States dollar     |
+    | THB  | Thai baht     |
+    | IDR  | Indonesian rupiah   |
+    | MYR  | Malaysian ringgit     |
+    | VND  | Vietnamese đồng   |
+    | KRW  | South Korean won     |
+    | SGD  | Singapore dollar |
+    | NZD  | New Zealand dollar |
+    | AUD  | Australian dollar     |
+    | JPY  | Japanese yen     |
+    | INR  | Indian rupee |
+    |HKD   |Hong Kong dollar      |
+    |USDT |Tether  |
+    |PHP|Philippine peso|
+    | KIDR  | 1000 IDR   |
+    | KVND  | 1000 VND   | 
 
 ## Encryption Flow
 

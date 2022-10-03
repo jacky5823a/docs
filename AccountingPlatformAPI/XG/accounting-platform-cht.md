@@ -24,6 +24,28 @@
     | Roulette | B |  
     | Sicbo | W, V |  
     | Sedie | C, D |
+- 支援幣別請參考下表，幣別代碼依照 [ISO_4217](https://en.wikipedia.org/wiki/ISO_4217) 制定
+ 
+     | 代碼 | 幣別     |
+     | ---- | -------- |
+     | CNY  | 人民幣   |
+     | USD  | 美金     |
+     | THB  | 泰銖     |
+     | IDR  | 印尼盾   |
+     | MYR  | 馬幣     |
+     | VND  | 越南盾   |
+     | KRW  | 韓幣     |
+     | SGD  | 新加坡幣 |
+     | NZD  | 紐西蘭幣 |
+     | AUD  | 澳元     |
+     | JPY  | 日圓     |
+     | INR  | 印度盧比 |
+     |HKD   |港幣      |
+     |USDT |泰達幣  |
+     |PHP|菲律賓披索|
+     | KIDR  | 千印尼盾   |
+     | KVND  | 千越南盾   |
+
 
 ## 加密流程
 
