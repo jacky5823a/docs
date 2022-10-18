@@ -7,7 +7,7 @@
     - [注單查詢](#注單查詢)
     - [轉帳](#轉帳)
     - [單一錢包2.0](#單一錢包20)
-    - [單一錢包1.x](#單一錢包1x)
+    - [單一錢包1.1](#單一錢包11)
 - [API 欄位參考資料](../reference-cht.md)
 
 ## 注意事項
@@ -74,13 +74,13 @@
 
 ### 單一錢包2.0
 
-- 單一錢包代理才能使用，相較於 1.x 版，2.0 版只需實作兩支 callbacks，專注於會員金額上的更新，加密方式也更精簡和彈性
+- 單一錢包代理才能使用，相較於 1.1 版，2.0 版只需實作兩支 callbacks，專注於會員金額上的更新，加密方式也更精簡和彈性
 - 到後台個人遊戲設定單一錢包 callbacks(getBalance/updateBalance)
 - 參考 [SeamlessWallet API 2.0](../../SeamlessWalletAPI2.0/SeamlessWalletAPI-2.0.md) 文件實作 `Get Balance` 及 `Update Balance` callbacks
 - update balance 只會呼叫一次，未避免發生重複結算金額，我方遇到 time out 或非預期的 response 等錯誤時不會重新呼叫，請錢包方定期調用 [GetRequestHistoryByTime api](https://staging-agent.jetcafe.life/swagger/public/index.html#/%E5%96%AE%E4%B8%80%E9%8C%A2%E5%8C%852.0/post_api_keno_api_xg_casino_GetRequestHistoryByTime) 檢查我方呼叫失敗的紀錄，並依據 `RequestJson` 內容修正玩家額度
 - 請提供貴系統測試環境(staging)的測試帳號，我方將會安排測試 callbacks 是否正常運作
 
-### 單一錢包 1.x
+### 單一錢包 1.1
 
 - 單一錢包代理才能使用，1.0 版本於 2022-10-17 後將被棄用，請升級到 1.1 或 2.0
 - 到後台個人遊戲設定單一錢包 callbacks(balance/bet/settle/rollback)

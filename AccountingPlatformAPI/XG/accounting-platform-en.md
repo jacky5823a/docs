@@ -7,7 +7,7 @@
     - [Wager](#Wager)
     - [Transfer](#Transfer)
     - [Seamless2.0](#Seamless20)
-    - [Seamless1.x](#Seamless1x)
+    - [Seamless1.1](#Seamless11)
 - [Reference of API](../reference-en.md)
 
 ## Notice
@@ -80,9 +80,9 @@ Only transfer wallet agents available, please refer to [Transfer API](https://st
 - Because of avoid settling repeatedly, our system only invokes the callback once when updating balance. If there is timeout or something unexpected response, our system won't re-invoke again. So please check the failed cases from [GetRequestHistoryByTime api](https://staging-agent.jetcafe.life/swagger/public/index.html?lang=en#/Seamless2.0/post_api_keno_api_xg_casino_GetRequestHistoryByTime) regularly, and according to the `RequestJson` in response to fix the balance of members.  
 - Please provide test account on staging(test) environment of your system after completing all of seamless callbacks. We need to test its working fine on staging. 
 
-### Seamless1.x
+### Seamless1.1
 
-- Only Seamless wallet agents available. The 1.0 version would be deprecate after 2022-10-17, please upgrade to the 1.1 or 2.0 version.
+- Only Seamless wallet agents available. The 1.0 version was deprecated, and our system force upgraded to the 1.1 version after 2022-10-17.
 - Please setting the seamless callbacks(balance/bet/settle/rollback) on the personal game setting page of the backstage. 
 - Refer to the [How to handle the balance of members](../../SeamlessWalletAPI1.x/handle-balance.md) and [XG Seamless Wallet API ](https://app.swaggerhub.com/apis/x-gaming-bet/xg-seamless_wallet_api_en/1.1) documents to implement all of seamless callbacks.
 - If the game round canceled before settlement, our system will invoke the rollback callback.
