@@ -77,12 +77,12 @@
 | ----- | -------------------- |
 | zh-CN | Simple Chinese       |
 | zh-TW | Tranditional Chinese |
-| en-US | English              |
+| en / en-US | English              |
 | th    | Thai                 |
 | id    | Indonesian           |
 | ko    | Korean               |
 | ja    | Japanese             |
-| vn    | Vietnamese           |
+| vi / vn   | Vietnamese           |
 
 
 ## Game Result
