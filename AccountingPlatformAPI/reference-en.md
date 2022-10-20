@@ -83,6 +83,7 @@
 | ko    | Korean               |
 | ja    | Japanese             |
 | vi / vn   | Vietnamese           |
+| ms | Malay |
 
 
 ## Game Result
