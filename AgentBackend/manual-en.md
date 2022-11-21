@@ -15,7 +15,7 @@ The personal profile is shown on the `Account Management/Profile` page. If you'd
 
 ## Game setting of agent
 
-Personal Game Setting is shown on the `Account Management/Personal Game Setting` page. If you'd like to see the downline agents' game setting, please go to the `Account Management/Agent Management` page. Every agent has his own game setting.
+Personal Game Setting is shown on the `System Management/Personal Setting` page. If you'd like to see the downline agents' game setting, please go to the `Account Management/Agent Management` page. Every agent has his own game setting.
 
 - Activate game: Disallow to deactivate. The game/member/table limit/logo/seamless callbacks setting need to activate the game first
 - Table setting: Please refer to the table No. from our game UI. Members of the agent won't enter the game table if disable the table No.. The game tables which disabled also won't be shown in game lobby
@@ -36,10 +36,15 @@ Check the account inquiry, bet record, transfer record, delivery record
 The sub-account of agent. Using the role-based access control(RBAC) system which able to add/update role permissions and append the role to the agent administrator. Also able to set platform available of agents for the agent administrator. **The agent administrator can not get the agent's records(include bets, accounting, transfer, members, ...etc) without the agent's platform available permission.**
 
 ## System Management
-Able to upload customized logos on the `System Setting` page. There are 3 different sizes of logos in the game
+The following are shown the features of Personal Setting:
+- Switch setting: include table setting, seamless wallet setting
+- Table limit setting
+- System account management: 
+  - Able to upload customized logos which would be shown on the game. There are 3 different sizes of logos in the game
+  - Able to set white list IP for backstage Logging
 
 ## Developer Zone
 - Developer Document: The `API Host`, `Agent ID`, `Agent Key` and API docs
 - Key Generator: Test the API Key, using to confirm the Key in the request
-
+- Seamless Request History: The request history from our side to the seamless callbacks of the agent
 
