@@ -5,7 +5,7 @@
 | Name           | Game Type ID     | Notice             |
 | -------------- | ---------------- | ------------------ |
 | Baccarat       | 1                |                    |
-| Sic-Bo         | 2                | under development    |
+| Sic-Bo         | 2                |    |
 | Roulette       | 3                |                    |
 | Multi-Tables       | 4                |  only using when member login game, the wager hasn't this type                 |
 | Dragon Tiger   | 5                |                    |

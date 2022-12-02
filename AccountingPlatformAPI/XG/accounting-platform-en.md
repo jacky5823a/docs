@@ -22,7 +22,7 @@ Please read the following notes before using our API.
     | Baccarat | E, F, G, H, I, J, K, L, O, P, X |
     | DragonTiger | A |  
     | Roulette | B |  
-    | Sicbo | W, V |  
+    | Sicbo | V, W |  
     | Sedie | C, D |
 
 - The table below is supported currencies, and the currency code is refer to [ISO_4217](https://en.wikipedia.org/wiki/ISO_4217)

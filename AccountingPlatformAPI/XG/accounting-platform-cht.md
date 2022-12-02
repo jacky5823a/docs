@@ -22,7 +22,7 @@
     | Baccarat | E, F, G, H, I, J, K, L, O, P, X |
     | DragonTiger | A |  
     | Roulette | B |  
-    | Sicbo | W, V |  
+    | Sicbo | V, W |  
     | Sedie | C, D |
 - 支援幣別請參考下表，幣別代碼依照 [ISO_4217](https://en.wikipedia.org/wiki/ISO_4217) 制定
  
