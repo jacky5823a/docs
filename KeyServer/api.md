@@ -388,6 +388,14 @@ GET /casino-api/v2/game-history?
 | 720p     | https://play.xtremegaming.games/sd/{桌號}-720.flv     | https://play.xtremegaming.games/sd/c-720.flv     |
 | 480p     | https://play.xtremegaming.games/sd/{桌號}-480.flv     | https://play.xtremegaming.games/sd/c-480.flv     |
 
+### 骰寶
+
+| 解析度 | 格式 | 範例 |
+| -------- | -------- | -------- |
+| 720p     | https://play.xtremegaming.games/sb/{桌號}-720.flv     | https://play.xtremegaming.games/sb/v-720.flv     |
+| 480p     | https://play.xtremegaming.games/sb/{桌號}-480.flv     | https://play.xtremegaming.games/sb/v-480.flv     |
+
+
 
 ### 開放桌號
 
@@ -400,6 +408,8 @@ GET /casino-api/v2/game-history?
 - J
 - K
 - L
+- M
+- N
 - O
 - P
 ` `
@@ -412,6 +422,9 @@ GET /casino-api/v2/game-history?
 #### 色碟
 - C
 - D
+
+#### 骰寶
+- V
 
 ## 錄影位址
 
