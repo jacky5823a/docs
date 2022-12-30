@@ -172,7 +172,7 @@ maintain--> |否| keypad_flow
 
 ## 數字牌型陣列對應
 #### 0-52數字陣列
-#### 1. 百家樂順序為:[Player1, Player2, Player3, Banker1, Banker2, Banker3]
+#### 1. 百家樂順序為:[Player1, Player2, Player3, Banker1, Banker2, Banker3] 注：補牌API部分因皇家2022/08/08提出修正修改為[P1, B1, P2, B2, P3, B3]
 #### 2. 龍虎順序為:[Dragon, 0, 0, Tiger, 0, 0]
 #### 3. 輪盤不適用以下數字排型對應, 順序第一個號碼為開出的號碼 : [Number, 0, 0, 0, 0, 0]
 #### 4. 色碟不適用以下數字排型對應, 順序第一個號碼為紅色碟數量 : [Seide, 0, 0, 0, 0, 0]
