@@ -18,29 +18,29 @@ Please read the following notes before using our API.
 - The following table presents the Table ID by game type in game. 
 
     | Table Id            | 名稱            |
-        | ---------------- | ---------------------- |
-        | **Baccarat**     |                        |
-        | H | BC01 |
-        | E | BC02 |
-        | O | BC03 |
-        | P | BC04 |
-        | J | BC05 |
-        | L | BC06 |
-        | G | BC07 |
-        | I | BC08 |
-        | F | BC09 |
-        | K | BC10 |
-        | X | BC99 |
-        | **DragonTiger**     |                        |
-        | A | DT01 |
-        | **Roulette**     |                        |
-        | B | RT01 |
-        | **Sicbo**     |                        |
-        | W | SB01 |
-        | V | SB02 |
-        | **Sedie**     |                        |
-        | C | SD01 |
-        | D | SD02 |
+    | ---------------- | ---------------------- |
+    | **Baccarat**     |                        |
+    | H | BC01 |
+    | E | BC02 |
+    | O | BC03 |
+    | P | BC04 |
+    | J | BC05 |
+    | L | BC06 |
+    | G | BC07 |
+    | I | BC08 |
+    | F | BC09 |
+    | K | BC10 |
+    | X | BC99 |
+    | **DragonTiger**     |                        |
+    | A | DT01 |
+    | **Roulette**     |                        |
+    | B | RT01 |
+    | **Sicbo**     |                        |
+    | W | SB01 |
+    | V | SB02 |
+    | **Sedie**     |                        |
+    | C | SD01 |
+    | D | SD02 |
 
 - The table below is supported currencies, and the currency code is refer to [ISO_4217](https://en.wikipedia.org/wiki/ISO_4217)
 
