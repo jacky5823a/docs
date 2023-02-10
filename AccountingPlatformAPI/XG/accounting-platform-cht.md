@@ -8,6 +8,7 @@
     - [轉帳](#轉帳)
     - [單一錢包2.0](#單一錢包20)
     - [單一錢包1.1](#單一錢包11)
+- [限紅說明](#限紅說明)    
 - [API 欄位參考資料](../reference-cht.md)
 
 ## 注意事項
@@ -58,6 +59,8 @@
 
 如果尚未支援的語言或是想自行處理，請按照[此份文件生成 `Key`](../encryption-cht.md)
 
+後台 開發者專區/API KEY 產生器 頁面可自行比對產出的 `Key` 是否正確
+
 ## API 規格 
 
 ### 會員&代理
@@ -88,3 +91,21 @@
 - 如果注單在結算前被取消，我方會調用 rollback 通知錢包方的系統
 - 如果注單在結算後被取消，我方不會通知錢包方，錢包方必須定期呼叫 [取得會員單注紀錄 API](https://staging-agent.jetcafe.life/swagger/public/index.html#/%E5%96%AE%E4%B8%80%E9%8C%A2%E5%8C%851.x/post_api_keno_api_xg_casino_GetReplenishmentByTime) 檢查下注的 `ModifiedStatus`，並處理會員的額度
 - 請提供貴系統測試環境(staging)的測試帳號，我方將會安排測試 callbacks 是否正常運作
+
+## 限紅說明
+
+- 不同幣別有不同限紅編號。會員在遊戲中可依所設定的限紅編號，切換不同的限紅範圍，下注籌碼會根據限紅範圍做調整，各幣別限紅編號對應限紅範圍可參考 [Table Limit ID](./table-limit.md)
+- 可透過後台或 API 調整限紅設定
+
+### 後台
+- 預設限紅：僅調用建立會員 API 時會使用到，**調整預設值並不會修改現有會員的限紅**。**系統管理/個人設定** 的限紅設定頁籤可調整自身的預設限紅組， **帳號管理/代理管理** 選取某位下層代理，預設限紅的頁籤可調整該下層代理的預設限紅組。每位代理針對每種幣別設定預設限紅組，初始預設值是最小範圍的限紅，可自由調整多個編號當預設限紅。
+- 取得/設定會員限紅：**帳號管理/會員管理** 頁面查看直屬跟下層代理的所有會員限紅，只有直屬的會員才可設定限紅，下層代理的會員限紅必須由下層代理才能調整
+
+### APIs
+- POST /api/keno-api/xg-casino/CreateMember 建立會員，可帶入限紅(LimitStake)參數，限紅參數可包含多筆限紅編號，若有帶入限紅(LimitStake)參數，將依 LimitStake 設定值為準，若無，將會根據會員幣別抓取上述後台的**預設限紅**設定
+- GET /api/keno-api/xg-casino/Template 取得指定會員限紅
+- POST /api/keno-api/xg-casino/Template 設定指定會員限紅，Template 參數可調整該會員限紅編號，會員原本的限紅會被 Template 參數覆寫
+- POST /api/keno-api/xg-casino/AllPlayersTemplate 設定指定幣別的所有會員限紅，可一次性調整指定幣別的所有現有會員限紅
+
+
+

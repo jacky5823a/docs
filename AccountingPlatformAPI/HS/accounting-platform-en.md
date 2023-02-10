@@ -8,6 +8,7 @@
     - [Transfer](#Transfer)
     - [Seamless2.0](#Seamless20)
     - [Seamless1.1](#Seamless11)
+- [Table Limit(Bet Limit)](#Table-Limit(Bet-Limit))
 - [Reference of API](../reference-en.md)
 
 ## Notice
@@ -91,4 +92,19 @@ Only transfer wallet agents available, please refer to [Transfer API](https://st
 - If the game round canceled before settlement, our system will invoke the rollback callback.
 - If the bet canceled after settlement, our system doesn't inform your system by rollback callback. Your system needs to check the `ModifiedStatus` of bet by [GetReplenishmentByTime api](https://staging-agent.olacak.live/swagger/public/index.html?lang=en#/Seamless1.x/post_api_keno_api_xg_casino_GetReplenishmentByTime) regularly and handle the member's balance.
 - Please provide test account on staging(test) environment of your system after completing all of seamless callbacks. We need to test its working fine on staging.
+
+## Table Limit(Bet Limit)
+
+- Different currency has different table limit ids. The member able to switch the table limit in the game which be set by the table limit ids. The bet chips would be changed by the different min/max limits. Please refer to [this doc](./table-limit.md) to get the table limit ids.
+- The Table Limit able to be set by the backstage or the apis
+
+### Backstage
+- Preset table limit: Only be using by invoking CreateMember api. **The table limit of members wouldn't change when modifying the preset table limit.** The Table Limit Setting on the System Management/Personal page provides the personal preset table limit setting. And the Table Limit Setting on the Account Management/Agent Management page provides the preset table limit setting of the downline agents. Every agent allows to set the preset table limit by each currency, and also allows to set multiple limit ids to be the preset table limit.    
+- Get/Set the table limit of member: The Account Management/Member Management page shows the table limit of your and your downline agents' members. But only allow to modify the table limit of your members.
+
+### APIs
+- POST /api/keno-api/xg-casino/CreateMember: The LimitStake param is optional and able to put multiple table limit ids in the LimitStake. If there is no the LimitStake param when invoking the CreateMember api, our system will set the **preset table limit** to the new member
+- GET /api/keno-api/xg-casino/Template: Fetch the specific member’s table limit
+- POST /api/keno-api/xg-casino/Template: Set the specific member’s table limit. Putting the table limit ids in the Template param, it would **overwrite** the original table limit of the specific member
+- POST /api/keno-api/xg-casino/AllPlayersTemplate: Modify all member’s table limits of the specific currency one time
 
