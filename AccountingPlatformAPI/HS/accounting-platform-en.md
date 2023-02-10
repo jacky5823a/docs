@@ -8,7 +8,7 @@
     - [Transfer](#Transfer)
     - [Seamless2.0](#Seamless20)
     - [Seamless1.1](#Seamless11)
-- [Table Limit(Bet Limit)](#Table-Limit(Bet-Limit))
+- [Table Limit(Bet Limit)](#table-limitbet-limit)
 - [Reference of API](../reference-en.md)
 
 ## Notice
