@@ -20,7 +20,7 @@
 
     | 遊戲類別 | Table Id  |
     | --- | --- |
-    | Baccarat | E, F, G, H, I, J, K, L, O, P, X |
+    | Baccarat | E, F, G, H, I, J, K, L, O, P|
     | DragonTiger | A |  
     | Roulette | B |  
     | Sicbo | V, W |  
