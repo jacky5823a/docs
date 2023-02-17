@@ -20,7 +20,7 @@ Please read the following notes before using our API.
 
     | Game Type | Table ID  |
     | --- | --- |
-    | Baccarat | E, F, G, H, I, J, K, L, O, P, X |
+    | Baccarat | E, F, G, H, I, J, K, L, O, P |
     | DragonTiger | A |  
     | Roulette | B |  
     | Sicbo | V, W |  
