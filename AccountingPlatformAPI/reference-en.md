@@ -21,14 +21,6 @@
 | Western Baccarat                  | 2          |
 | Commission Free Baccarat(Super 6) | 3          |
 
-## Table Type
-
-| Name                   | TableType |
-| ---------------------- | --------- |
-| Standard Baccarat      | 1         |
-| Dealing-First Baccarat | 2         |
-| Speed Baccarat         | 3         |
-| Squint Baccarat        | 4         |
 
 ## Modified Status
 | Status        | Description |
