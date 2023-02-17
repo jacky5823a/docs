@@ -31,7 +31,6 @@
     | I | BC08 |
     | F | BC09 |
     | K | BC10 |
-    | X | BC99 |
     | **DragonTiger**     |                        |
     | A | DT01 |
     | **Roulette**     |                        |
