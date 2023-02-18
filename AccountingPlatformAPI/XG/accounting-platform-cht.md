@@ -20,7 +20,7 @@
 
     | 遊戲類別 | Table Id  |
     | --- | --- |
-    | Baccarat | E, F, G, H, I, J, K, L, O, P|
+    | Baccarat | E, F, G, H, I, J, K, L, O, P，I, J 為特色百家|
     | DragonTiger | A |  
     | Roulette | B |  
     | Sicbo | V, W |  

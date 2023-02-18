@@ -25,10 +25,10 @@ Please read the following notes before using our API.
     | E | BC02 |
     | O | BC03 |
     | P | BC04 |
-    | J | BC05 |
+    | J | BC05 (feature baccarat)|
     | L | BC06 |
     | G | BC07 |
-    | I | BC08 |
+    | I | BC08 (feature baccarat)|
     | F | BC09 |
     | K | BC10 |
     | **DragonTiger**     |                        |
