@@ -104,7 +104,7 @@ The playing card code is a combination of suits and numbers, ex. SA stands for A
 
 | Code | Corresponding |
 | ---- | ------------- |
-| A    | 1             |
+| 1    | A             |
 | 2    | 2             |
 | 3    | 3             |
 | 4    | 4             |
