@@ -437,23 +437,29 @@ If a member place Banker 100, Banker 100, Banker Pair 100, there are two records
 | 267 | 1,2,3 | 1,2,3 | 
 | 268 | 2,3,4 | 2,3,4 | 
 | 269 | 3,4,5 | 3,4,5 | 
-| 270 | 4,5,6 | 4,5,6 | 
+| 270 | 4,5,6 | 4,5,6 |
+| 271 | HiLoThreeForces1 | Hi-Lo Three Forces 1 | 
+| 272 | HiLoThreeForces2 | Hi-Lo Three Forces 2 | 
+| 273 | HiLoThreeForces3 | Hi-Lo Three Forces 3 | 
+| 274 | HiLoThreeForces4 | Hi-Lo Three Forces 4 | 
+| 275 | HiLoThreeForces5 | Hi-Lo Three Forces 5 | 
+| 276 | HiLoThreeForces6 | Hi-Lo Three Forces 6 |  
 
 
 ### Speed Sicbo
 
 | id | name | Description |
 | --- | --- | --- |
-| 271 | 1 | 1 | 
-| 272 | 2 | 2 | 
-| 273 | 3 | 3 | 
-| 274 | 4 | 4 | 
-| 275 | 5 | 5 | 
-| 276 | 6 | 6 | 
-| 277 | Big | High | 
-| 278 | Small | Low | 
-| 279 | Odd | Odd | 
-|280 | Even | Even | 
+| 277 | 1 | 1 | 
+| 278 | 2 | 2 | 
+| 279 | 3 | 3 | 
+| 280 | 4 | 4 | 
+| 281 | 5 | 5 | 
+| 282 | 6 | 6 | 
+| 283 | Big | High | 
+| 284 | Small | Low | 
+| 285 | Odd | Odd | 
+|286 | Even | Even | 
 
 ## Valid Bet Amount
 - The diff between Banker/Player, or High/Low. If a player place on the Banker 200 and on the Player 100 and game result is not tie. The valid bet amount would be 100 
