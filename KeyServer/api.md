@@ -360,17 +360,19 @@ GET /casino-api/v2/game-history?
 
 
 ## 視訊位址
-目前提供 720p 和 420p 兩種位址 格式如下
+目前提供 1080p 、 720p 和 420p 三種位址 格式如下
 
 ### 百家樂
 | 解析度 | 格式 | 範例 |
 | -------- | -------- | -------- |
+| 1080p     | https://play.xtremegaming.games/bacc/{桌號}-1080.flv     | https://play.xtremegaming.games/bacc/s-1080.flv     |
 | 720p     | https://play.xtremegaming.games/bacc/{桌號}-720.flv     | https://play.xtremegaming.games/bacc/s-720.flv     |
 | 480p     | https://play.xtremegaming.games/bacc/{桌號}-480.flv     | https://play.xtremegaming.games/bacc/s-480.flv     |
 
 ### 龍虎
 | 解析度 | 格式 | 範例 |
 | -------- | -------- | -------- |
+| 1080p     | https://play.xtremegaming.games/dt/{桌號}-1080.flv     | https://play.xtremegaming.games/dt/a-1080.flv     |
 | 720p     | https://play.xtremegaming.games/dt/{桌號}-720.flv     | https://play.xtremegaming.games/dt/a-720.flv     |
 | 480p     | https://play.xtremegaming.games/dt/{桌號}-480.flv     | https://play.xtremegaming.games/dt/a-480.flv     |
 
@@ -378,6 +380,7 @@ GET /casino-api/v2/game-history?
 
 | 解析度 | 格式 | 範例 |
 | -------- | -------- | -------- |
+| 1080p     | https://play.xtremegaming.games/rt/{桌號}-1080.flv     | https://play.xtremegaming.games/rt/b-1080.flv     |
 | 720p     | https://play.xtremegaming.games/rt/{桌號}-720.flv     | https://play.xtremegaming.games/rt/b-720.flv     |
 | 480p     | https://play.xtremegaming.games/rt/{桌號}-480.flv     | https://play.xtremegaming.games/rt/b-480.flv     |
 
@@ -385,6 +388,7 @@ GET /casino-api/v2/game-history?
 
 | 解析度 | 格式 | 範例 |
 | -------- | -------- | -------- |
+| 1080p     | https://play.xtremegaming.games/sd/{桌號}-1080.flv     | https://play.xtremegaming.games/sd/c-1080.flv     |
 | 720p     | https://play.xtremegaming.games/sd/{桌號}-720.flv     | https://play.xtremegaming.games/sd/c-720.flv     |
 | 480p     | https://play.xtremegaming.games/sd/{桌號}-480.flv     | https://play.xtremegaming.games/sd/c-480.flv     |
 
@@ -392,6 +396,7 @@ GET /casino-api/v2/game-history?
 
 | 解析度 | 格式 | 範例 |
 | -------- | -------- | -------- |
+| 1080p     | https://play.xtremegaming.games/sb/{桌號}-1080.flv     | https://play.xtremegaming.games/sb/v-1080.flv     |
 | 720p     | https://play.xtremegaming.games/sb/{桌號}-720.flv     | https://play.xtremegaming.games/sb/v-720.flv     |
 | 480p     | https://play.xtremegaming.games/sb/{桌號}-480.flv     | https://play.xtremegaming.games/sb/v-480.flv     |
 
