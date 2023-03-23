@@ -87,7 +87,7 @@
 
 - 單一錢包代理才能使用，1.0 版本於 2022-10-17 後將被棄用，請升級到 1.1 或 2.0
 - 到後台個人遊戲設定單一錢包 callbacks(balance/bet/settle/rollback)
-- 參考 [How to handle the balance of members](../../SeamlessWalletAPI1.x/handle-balance.md) 和 [XG Seamless Wallet API](https://app.swaggerhub.com/apis/x-gaming-bet/xg-seamless_wallet_api/1.1) 文件實作各類型 callbacks
+- 參考 [How to handle the balance of members](../../SeamlessWalletAPI1.x/handle-balance.md) 和 [XG Seamless Wallet API](https://github.com/jacky5823a/docs/blob/master/SeamlessWalletAPI1.x/SeamlessWallet1.1.md) 文件實作各類型 callbacks
 - 如果注單在結算前被取消，我方會調用 rollback 通知錢包方的系統
 - 如果注單在結算後被取消，我方不會通知錢包方，錢包方必須定期呼叫 [取得會員單注紀錄 API](https://staging-agent.jetcafe.life/swagger/public/index.html#/%E5%96%AE%E4%B8%80%E9%8C%A2%E5%8C%851.x/post_api_keno_api_xg_casino_GetReplenishmentByTime) 檢查下注的 `ModifiedStatus`，並處理會員的額度
 - 請提供貴系統測試環境(staging)的測試帳號，我方將會安排測試 callbacks 是否正常運作
