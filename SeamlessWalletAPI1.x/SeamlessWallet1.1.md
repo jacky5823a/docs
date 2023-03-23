@@ -61,7 +61,7 @@ Response example
 
 #### Request
 > For security reason, response should return back in **3** seconds, if not, task will cancel.
-> We will record timeout message in [ResponseJson] such as  **[Response Timeout] Response time over 3 seconds, Task Canceled.**
+> We will record timeout message in [Message] such as  **[Response Timeout] Response time over 3 seconds, Task Canceled.**
 Headers
 
 |  Column | Format | Description |
@@ -137,6 +137,8 @@ Response example
 ## Settle
 >If run not cancel, the bet would be settled at the end of game round.
 #### Request
+> For security reason, response should return back in **3** seconds, if not, task will cancel.
+> We will record timeout message in [Message] such as  **[Response Timeout] Response time over 3 seconds, Task Canceled.**
 > We will send each request, which request includ mutiple players betting in same run.
 Headers
 

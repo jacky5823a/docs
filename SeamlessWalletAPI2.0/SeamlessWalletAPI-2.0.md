@@ -92,7 +92,7 @@ HTTP Request Method: Post
 ### Response
 
 > For security reason, response should return back in **3** seconds, if not, task will cancel.
-> We will record timeout message in [ResponseJson] such as  **[Response Timeout] Response time over 3 seconds, Task Canceled.**
+> We will record timeout message in [Message] such as  **[Response Timeout] Response time over 3 seconds, Task Canceled.**
 > 
 | Column | Format | Description |
 | -------- | --------  | -------- |
