@@ -23,6 +23,9 @@ maintain--> |否| keypad_flow
 
 ```
 
+## 注意事項
+訊號目前是透過 `socket 協定` 傳輸，有可能會一次收到多筆 json 或是不完整的 json，目前訊號是透過斷行符號`/r/n`去分割訊息，這部份請自行處理或是利用自行利用 socket 相關的套件處理。
+
 ## API 位置
 - 測試: keyserver.jetcafe.life:2570
 - 正式機: keyserver.x-gaming.bet:2570
