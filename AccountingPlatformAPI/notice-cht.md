@@ -13,6 +13,10 @@
 - 所有 API 只通過代理所設定的 IP 白名單，除此之外的 IP 皆無法通過，可在代理後台 [帳號管理/個人資料](../AgentBackend/manual-cht.md#代理基本資料) 查看自身的 IP 白名單，下層代理的白名單可至 `帳號管理/代理管理` 頁面設定 
 - 若要調整自身的 IP 白名單，請上層代理協助修改
 
+## HTTPS encryption
+
+要透過 HTTPS 呼叫我方 API，需支援 TLS 1.2 以上版本的加密方式
+
 ## API 語系
 API 支援語系切換,只需 request 參數中加上 `ApiLang` 或 `lang`參數
 

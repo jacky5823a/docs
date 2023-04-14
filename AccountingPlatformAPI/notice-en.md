@@ -13,6 +13,10 @@ The `API URL`, `Agent ID` and `Agent Key` are on the [Developer Zone/Development
 - The ip form the request of the agent must in the whitelist IP list when invoking our apis. The [Account Management/Profile](../AgentBackend/manual-en.md#Profile-of-agent) shows the personal whitelist IP list. If you'd like to set downline agent's whitelist IP list, please go to the [Account Management/Agent Management] page. 
 - Please ask the upline agent if you'd like to modify personal whitelist IP list
 
+## HTTPS encryption
+
+Please support TLS 1.2 or later version of protocol when invoking our APIs
+
 ## Language Families
 Append the `ApiLang` or `lang` parameter in the request if you'd like to switch the API language.
 
