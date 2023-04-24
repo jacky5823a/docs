@@ -368,41 +368,40 @@ GET /casino-api/v2/game-history/hs?
 ### 百家樂
 | 解析度 | 格式 | 範例 |
 | -------- | -------- | -------- |
-| 1080p     | https://play.xtremegaming.games/bacc/{桌號}-1080.flv     | https://play.xtremegaming.games/bacc/ba01-1080.flv     |
-| 720p     | https://play.xtremegaming.games/bacc/{桌號}-720.flv     | https://play.xtremegaming.games/bacc/ba01-720.flv     |
-| 480p     | https://play.xtremegaming.games/bacc/{桌號}-480.flv     | https://play.xtremegaming.games/bacc/ba01-480.flv     |
+| 1080p     | https://play.kasar.live/bacc/{桌號}-1080.flv     | https://play.kasar.live/bacc/ba01-1080.flv     |
+| 720p     | https://play.kasar.live/bacc/{桌號}-720.flv     | https://play.kasar.live/bacc/ba01-720.flv     |
+| 480p     | https://play.kasar.live/bacc/{桌號}-480.flv     | https://play.kasar.live/bacc/ba01-480.flv     |
 
 ### 龍虎
 | 解析度 | 格式 | 範例 |
 | -------- | -------- | -------- |
-| 1080p     | https://play.xtremegaming.games/dt/{桌號}-1080.flv     | https://play.xtremegaming.games/dt/dt01-1080.flv     |
-| 720p     | https://play.xtremegaming.games/dt/{桌號}-720.flv     | https://play.xtremegaming.games/dt/dt01-720.flv     |
-| 480p     | https://play.xtremegaming.games/dt/{桌號}-480.flv     | https://play.xtremegaming.games/dt/dt01-480.flv     |
+| 1080p     | https://play.kasar.live/dt/{桌號}-1080.flv     | https://play.kasar.live/dt/dt01-1080.flv     |
+| 720p     | https://play.kasar.live/dt/{桌號}-720.flv     | https://play.kasar.live/dt/dt01-720.flv     |
+| 480p     | https://play.kasar.live/dt/{桌號}-480.flv     | https://play.kasar.live/dt/dt01-480.flv     |
 
 ### 輪盤
 
 | 解析度 | 格式 | 範例 |
 | -------- | -------- | -------- |
-| 1080p     | https://play.xtremegaming.games/rt/{桌號}-1080.flv     | https://play.xtremegaming.games/rt/rt01-1080.flv     |
-| 720p     | https://play.xtremegaming.games/rt/{桌號}-720.flv     | https://play.xtremegaming.games/rt/rt01-720.flv     |
-| 480p     | https://play.xtremegaming.games/rt/{桌號}-480.flv     | https://play.xtremegaming.games/rt/rt01-480.flv     |
+| 1080p     | https://play.kasar.live/rt/{桌號}-1080.flv     | https://play.kasar.live/rt/rt01-1080.flv     |
+| 720p     | https://play.kasar.live/rt/{桌號}-720.flv     | https://play.kasar.live/rt/rt01-720.flv     |
+| 480p     | https://play.kasar.live/rt/{桌號}-480.flv     | https://play.kasar.live/rt/rt01-480.flv     |
 
 ### 色碟
 
 | 解析度 | 格式 | 範例 |
 | -------- | -------- | -------- |
-| 1080p     | https://play.xtremegaming.games/sd/{桌號}-1080.flv     | https://play.xtremegaming.games/sd/sd01-1080.flv     |
-| 720p     | https://play.xtremegaming.games/sd/{桌號}-720.flv     | https://play.xtremegaming.games/sd/sd01-720.flv     |
-| 480p     | https://play.xtremegaming.games/sd/{桌號}-480.flv     | https://play.xtremegaming.games/sd/sd01-480.flv     |
+| 1080p     | https://play.kasar.live/sd/{桌號}-1080.flv     | https://play.kasar.live/sd/sd01-1080.flv     |
+| 720p     | https://play.kasar.live/sd/{桌號}-720.flv     | https://play.kasar.live/sd/sd01-720.flv     |
+| 480p     | https://play.kasar.live/sd/{桌號}-480.flv     | https://play.kasar.live/sd/sd01-480.flv     |
 
 ### 骰寶
 
 | 解析度 | 格式 | 範例 |
 | -------- | -------- | -------- |
-| 1080p     | https://play.xtremegaming.games/sb/{桌號}-1080.flv     | https://play.xtremegaming.games/sb/sb01-1080.flv     |
-| 720p     | https://play.xtremegaming.games/sb/{桌號}-720.flv     | https://play.xtremegaming.games/sb/sb01-720.flv     |
-| 480p     | https://play.xtremegaming.games/sb/{桌號}-480.flv     | https://play.xtremegaming.games/sb/sb01-480.flv     |
-
+| 1080p     | https://play.kasar.live/sb/{桌號}-1080.flv     | https://play.kasar.live/sb/sb01-1080.flv     |
+| 720p     | https://play.kasar.live/sb/{桌號}-720.flv     | https://play.kasar.live/sb/sb01-720.flv     |
+| 480p     | https://play.kasar.live/sb/{桌號}-480.flv     | https://play.kasar.live/sb/sb01-480.flv     |
 
 
 ### 開放桌號
