@@ -368,9 +368,9 @@ GET /casino-api/v2/game-history/hs?
 ### 百家樂
 | 解析度 | 格式 | 範例 |
 | -------- | -------- | -------- |
-| 1080p     | https://play.kasar.live/bacc/{桌號}-1080.flv     | https://play.kasar.live/bacc/ba01-1080.flv     |
-| 720p     | https://play.kasar.live/bacc/{桌號}-720.flv     | https://play.kasar.live/bacc/ba01-720.flv     |
-| 480p     | https://play.kasar.live/bacc/{桌號}-480.flv     | https://play.kasar.live/bacc/ba01-480.flv     |
+| 1080p     | https://play.kasar.live/bacc/{桌號}-1080.flv     | https://play.kasar.live/bacc/bc01-1080.flv     |
+| 720p     | https://play.kasar.live/bacc/{桌號}-720.flv     | https://play.kasar.live/bacc/bc01-720.flv     |
+| 480p     | https://play.kasar.live/bacc/{桌號}-480.flv     | https://play.kasar.live/bacc/bc01-480.flv     |
 
 ### 龍虎
 | 解析度 | 格式 | 範例 |
