@@ -28,7 +28,7 @@ maintain--> |否| keypad_flow
 
 ## API 位置
 - 測試: keyserver.olacak.live:2580
-- 正式機: 2023/5/8 上線提供
+- 正式機: keyserver.kasar.live:2580
 
 
 ## 維護
@@ -207,7 +207,7 @@ maintain--> |否| keypad_flow
 | 環境 | 位址 | 
 | -------- | -------- | 
 | Stage     | http://keypad.admin.olacak.live     | 
-| Production | 2023/5/8 提供 |
+| Production | http://keypad.admin.kasar.live     |
 
 ### 取得路圖資料
 > GET /casino-api/v2/roadmap/hs?tableId=F&round=1617867216&gameType=gameType
