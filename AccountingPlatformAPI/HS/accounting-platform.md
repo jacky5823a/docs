@@ -17,41 +17,14 @@
 
 - 請詳閱[注意事項](../notice-cht.md)
 - 遊戲`桌台編號`請參考下表，實際開桌狀況以遊戲顯示為準
-     - Staging 環境：
-        
-        | 遊戲類別 | Table Id  |
-        | --- | --- |
-        | Baccarat | BC01, BC02, BC03, BC04, BC05, BC06, BC07, BC08, BC09, BC10，BC05, BC08 為特色百家|
-        | DragonTiger | DT01 |  
-        | Roulette | RT01 |  
-        | Sicbo | SB01, SB02 |  
-        | Sedie | SD01, SD02 |
-        
-    - 正式環境: (Table Id 將於 2023/05/08 調整，改傳 BCXX, DTXX 等編號，請參考 staging 環境的設置) 
-
-    | Table Id            | 名稱            |
-    | ---------------- | ---------------------- |
-    | **Baccarat**     |                        |
-    | H | BC01 |
-    | E | BC02 |
-    | O | BC03 |
-    | P | BC04 |
-    | J | BC05(特色百家) |
-    | L | BC06 |
-    | G | BC07 |
-    | I | BC08(特色百家) |
-    | F | BC09 |
-    | K | BC10 |
-    | **DragonTiger**     |                        |
-    | A | DT01 |
-    | **Roulette**     |                        |
-    | B | RT01 |
-    | **Sicbo**     |                        |
-    | W | SB01 |
-    | V | SB02 |
-    | **Sedie**     |                        |
-    | C | SD01 |
-    | D | SD02 |
+ 
+    | 遊戲類別 | Table Id  |
+    | --- | --- |
+    | Baccarat | BC01, BC02, BC03, BC04, BC05, BC06, BC07, BC08, BC09, BC10，BC05, BC08 為特色百家|
+    | DragonTiger | DT01 |  
+    | Roulette | RT01 |  
+    | Sicbo | SB01, SB02 |  
+    | Sedie | SD01, SD02 |
    
 
 - 支援幣別請參考下表，幣別代碼依照 [ISO_4217](https://en.wikipedia.org/wiki/ISO_4217) 制定

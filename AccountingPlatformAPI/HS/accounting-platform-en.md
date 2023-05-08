@@ -17,8 +17,7 @@ Please read the following notes before using our API.
 
 - Please read the [Notice](../notice-en.md) to get more information.
 - The following table presents the Table ID by game type in game. 
-    - Staging: 
-    
+
     | Game Type | Table Id  |
     | --- | --- |
     | Baccarat | BC01, BC02, BC03, BC04, BC05, BC06, BC07, BC08, BC09, BC10，BC05, BC08 are the feature baccarat|
@@ -27,30 +26,6 @@ Please read the following notes before using our API.
     | Sicbo | SB01, SB02 |  
     | Sedie | SD01, SD02 |
     
-    - Prod: (The Table Id would be changed into BCXX, DTXX on 2023/05/08, please refer to the staging env. setting)
-    | Table Id            | 名稱            |
-    | ---------------- | ---------------------- |
-    | **Baccarat**     |                        |
-    | H | BC01 |
-    | E | BC02 |
-    | O | BC03 |
-    | P | BC04 |
-    | J | BC05 (feature baccarat)|
-    | L | BC06 |
-    | G | BC07 |
-    | I | BC08 (feature baccarat)|
-    | F | BC09 |
-    | K | BC10 |
-    | **DragonTiger**     |                        |
-    | A | DT01 |
-    | **Roulette**     |                        |
-    | B | RT01 |
-    | **Sicbo**     |                        |
-    | W | SB01 |
-    | V | SB02 |
-    | **Sedie**     |                        |
-    | C | SD01 |
-    | D | SD02 |
 - The table below is supported currencies, and the currency code is refer to [ISO_4217](https://en.wikipedia.org/wiki/ISO_4217)
 
     | Code | Currency     |
