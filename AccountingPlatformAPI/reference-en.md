@@ -151,7 +151,7 @@ If a member place Banker 100, Banker 100, Banker Pair 100, there are two records
 
 ## Spot
 
-### Baccarat
+### Baccarat(GameType = 1)
 | id | name | Description |
 | --- | --- | --- |
 | 1 | Banker           | Bankder                |
@@ -181,285 +181,282 @@ If a member place Banker 100, Banker 100, Banker Pair 100, there are two records
 | 25 | PlayerPairNoRefund | Player Pair and no refund   |
 | 26 | Super6           | Super 6                |
 
-
-### Roulette
-| id | name | Description |
-| --- | --- | --- |
-| 27 | 1 | Number 01 | 
-| 28 | 2 | Number 02 | 
-| 29 | 3 | Number 03 | 
-| 30 | 4 | Number 04 | 
-| 31 | 5 | Number 05 | 
-| 32 | 6 | Number 06 | 
-| 33 | 7 | Number 07 | 
-| 34 | 8 | Number 08 | 
-| 35 | 9 | Number 09 | 
-| 36 | 10 | Number 10 | 
-| 37 | 11 | Number 11 | 
-| 38 | 12 | Number 12 | 
-| 39 | 13 | Number 13 | 
-| 40 | 14 | Number 14 | 
-| 41 | 15 | Number 15 | 
-| 42 | 16 | Number 16 | 
-| 43 | 17 | Number 17 | 
-| 44 | 18 | Number 18 | 
-| 45 | 19 | Number 19 | 
-| 46 | 20 | Number 20 | 
-| 47 | 21 | Number 21 | 
-| 48 | 22 | Number 22 | 
-| 49 | 23 | Number 23 | 
-| 50 | 24 | Number 24 | 
-| 51 | 25 | Number 25 | 
-| 52 | 26 | Number 26 | 
-| 53 | 27 | Number 27 | 
-| 54 | 28 | Number 28 | 
-| 55 | 29 | Number 29 | 
-| 56 | 30 | Number 30 | 
-| 57 | 31 | Number 31 | 
-| 58 | 32 | Number 32 | 
-| 59 | 33 | Number 33 | 
-| 60 | 34 | Number 34 | 
-| 61 | 35 | Number 35 | 
-| 62 | 36 | Number 36 | 
-| 63 | 0 | Number 0 | 
-| 64 | Big | High | 
-| 65 | Small | Low | 
-| 66 | Odd | Odd | 
-| 67 | Even | Even | 
-| 68 | Red | Red | 
-| 69 | Black | Black | 
-| 70 | Split_1_2 | Split(01,02) | 
-| 71 | Split_1_4 | Split(01,04) | 
-| 72 | Split_2_3 | Split(02,03) | 
-| 73 | Split_2_5 | Split(02,05) | 
-| 74 | Split_3_6 | Split(03,06) | 
-| 75 | Split_4_6 | Split(04,05) | 
-| 76 | Split_4_7 | Split(04,07) | 
-| 77 | Split_5_6 | Split(05,06) | 
-| 78 | Split_5_8 | Split(05,08) | 
-| 79 | Split_6_9 | Split(06,09) | 
-| 80 | Split_7_8 | Split(07,08) | 
-| 81 | Split_7_10 | Split(07,10) | 
-| 82 | Split_8_9 | Split(08,09) | 
-| 83 | Split_8_11 | Split(08,11) | 
-| 84 | Split_9_12 | Split(09,12) | 
-| 85 | Split_10_11 | Split(10,11) | 
-| 86 | Split_10_13 | Split(10,13) | 
-| 87 | Split_11_12 | Split(11,12) | 
-| 88 | Split_11_14 | Split(11,14) | 
-| 89 | Split_12_15 | Split(12,15) | 
-| 90 | Split_13_14 | Split(13,14) | 
-| 91 | Split_13_16 | Split(13,16) | 
-| 92 | Split_14_15 | Split(14,15) | 
-| 93 | Split_14_17 | Split(14,17) | 
-| 94 | Split_15_18 | Split(15,18) | 
-| 95 | Split_16_17 | Split(16,17) | 
-| 96 | Split_16_19 | Split(16,19) | 
-| 97 | Split_17_18 | Split(17,18) | 
-| 98 | Split_17_20 | Split(17,20) | 
-| 99 | Split_18_21 | Split(18,21) | 
-| 100 | Split_19_20 | Split(19,20) | 
-| 101 | Split_19_22 | Split(19,22) | 
-| 102 | Split_20_21 | Split(20,21) | 
-| 103 | Split_20_23 | Split(20,23) | 
-| 104 | Split_21_24 | Split(21,24) | 
-| 105 | Split_22_23 | Split(22,23) | 
-| 106 | Split_22_25 | Split(22,25) | 
-| 107 | Split_23_24 | Split(23,24) | 
-| 108 | Split_23_26 | Split(23,26) | 
-| 109 | Split_24_27 | Split(24,27) | 
-| 110 | Split_25_26 | Split(25,26) | 
-| 111 | Split_25_28 | Split(25,28) | 
-| 112 | Split_26_27 | Split(26,27) | 
-| 113 | Split_26_29 | Split(26,29) | 
-| 114 | Split_27_30 | Split(27,30) | 
-| 115 | Split_28_29 | Split(28,29) | 
-| 116 | Split_28_31 | Split(28,31) | 
-| 117 | Split_29_30 | Split(29,30) | 
-| 118 | Split_29_32 | Split(29,32) | 
-| 119 | Split_30_33 | Split(30,33) | 
-| 120 | Split_31_32 | Split(31,32) | 
-| 121 | Split_31_34 | Split(31,34) | 
-| 122 | Split_32_33 | Split(32,33) | 
-| 123 | Split_32_35 | Split(32,35) | 
-| 124 | Split_33_36 | Split(33,36) | 
-| 125 | Split_34_35 | Split(34,35) | 
-| 126 | Split_35_36 | Split(35,36) | 
-| 127| ThreeNumber_0_1_2 | Three Number(00,01,02) | 
-| 128 | ThreeNumber_0_2_3 | Three Number(00,02,03) | 
-| 129 | Street_1 | Street(01,02,03) | 
-| 130 | Street_4 | Street(04,05,06) | 
-| 131 | Street_7 | Street(07,08,09) | 
-| 132 | Street_10 | Street(10,11,12) | 
-| 133 | Street_13 | Street(13,14,15) | 
-| 134 | Street_16 | Street(16,17,18) | 
-| 135 | Street_19 | Street(19,20,21) | 
-| 136 | Street_22 | Street(22,23,24) | 
-| 137 | Street_25 | Street(25,26,27) | 
-| 138 | Street_28 | Street(28,29,30) | 
-| 139 | Street_31 | Street(31,32,33) | 
-| 140 | Street_34 | Street(34,35,36) | 
-| 141 | FourNumber | Four Number(00,01,02,03) | 
-| 142 | Corner_3 | Corner(01,02,04,05) | 
-| 143| Corner_4 | Corner(02,03,05,06) | 
-| 144 | Corner_6 | Corner(04,05,07,08) | 
-| 145 | Corner_7 | Corner(05,06,08,09) | 
-| 146 | Corner_9 | Corner(07,08,10,11) | 
-| 147 | Corner_10 | Corner(08,09,11,12) | 
-| 148 | Corner_12 | Corner(10,11,13,14) | 
-| 149 | Corner_13 | Corner(11,12,14,15) | 
-| 150 | Corner_15 | Corner(13,14,16,17) | 
-| 151 | Corner_16 | Corner(14,15,17,18) | 
-| 152 | Corner_18 | Corner(16,17,19,20) | 
-| 153 | Corner_19 | Corner(17,18,20,21) | 
-| 154 | Corner_21 | Corner(19,20,22,23) | 
-| 155 | Corner_22 | Corner(20,21,23,24) | 
-| 156 | Corner_24 | Corner(22,23,25,26) | 
-| 157 | Corner_25 | Corner(23,24,26,27) | 
-| 158 | Corner_27 | Corner(25,26,28,29) | 
-| 159 | Corner_28 | Corner(26,27,29,30) | 
-| 160 | Corner_30 | Corner(28,29,31,32) | 
-| 161 | Corner_31 | Corner(29,30,32,33) | 
-| 162 | Corner_33 | Corner(31,32,34,35) | 
-| 163 | Corner_34 | Corner(32,33,35,36) | 
-| 164 | Line_1 | Line(01~06) | 
-| 165 | Line_4 | Line(04~09) | 
-| 166 | Line_7 | Line(07~12) | 
-| 167 | Line_10 | Line(10~15) | 
-| 168 | Line_13 | Line(13~18) | 
-| 169 | Line_16 | Line(16~21) | 
-| 170 | Line_19 | Line(19~24) | 
-| 171 | Line_22 | Line(22~27) | 
-| 172 | Line_25 | Line(25~30) | 
-| 173 | Line_28 | Line(28~33) | 
-| 174 | Line_31 | Line(31~36) | 
-| 175 | Dozen_1st | 1st Dozen | 
-| 176 | Dozen_2nd | 2nd Dozen | 
-| 177 | Dozen_3rd | 3rd Dozen| 
-| 178 | Column_1st | 1st Column | 
-| 179 | Column_2nd | 2nd Column | 
-| 180 | Column_3rd | 3rd Column | 
-
-
-### Dragon Tiger
+### Sicbo(GameType = 2)
 
 | id | name | Description |
 | --- | --- | --- |
-| 181  Dragon           | Dragon                 |
-| 182 | Tiger            | Tiger                  |
-| 183 | Tie | Tie |
+| 1 | ThreeForces1 | Three Forces 1 | 
+| 2 | ThreeForces2 | Three Forces 2 | 
+| 3 | ThreeForces3 | Three Forces 3 | 
+| 4 | ThreeForces4 | Three Forces 4 | 
+| 5 | ThreeForces5 | Three Forces 5 | 
+| 6 | ThreeForces6 | Three Forces 6 | 
+| 7 | Big | Big | 
+| 8 | Small | Small | 
+| 9 | Odd | Odd | 
+| 10 | Even | Even | 
+| 11 | Total4 | Total of points is 4 | 
+| 12 | Total5 | Total of points is 5 | 
+| 13 | Total6 | Total of points is 6 | 
+| 14 | Total7 | Total of points is 7 | 
+| 15 | Total8 | Total of points is 8 | 
+| 16 | Total9 | Total of points is 9 | 
+| 17 | Total10 | Total of points is 10 | 
+| 18 | Total11 | Total of points is 11 | 
+| 19 | Total12 | Total of points is 12 | 
+| 20 | Total13 | Total of points is 13 | 
+| 21 | Total14 | Total of points is 14 | 
+| 22 | Total15 | Total of points is 15 | 
+| 23 | Total16 | Total of points is 16 | 
+| 24 | Total17 | Total of points is 17 | 
+| 25 | PaiGow12 | Two Dice Combination 1、2 | 
+| 26 | PaiGow13 | Two Dice Combination 1、3 | 
+| 27 | PaiGow14 | Two Dice Combination 1、4 | 
+| 28 | PaiGow15 | Two Dice Combination 1、5 | 
+| 29 | PaiGow16 | Two Dice Combination 1、6 | 
+| 30 | PaiGow23 | Two Dice Combination 2、3 | 
+| 31 | PaiGow24 | Two Dice Combination 2、4 | 
+| 32 | PaiGow25 | Two Dice Combination 2、5 | 
+| 33 | PaiGow26 | Two Dice Combination 2、6 | 
+| 34 | PaiGow34 | Two Dice Combination 3、4 | 
+| 35 | PaiGow35 | Two Dice Combination 3、5 | 
+| 36 | PaiGow36 | Two Dice Combination 3、6 | 
+| 37 | PaiGow45 | Two Dice Combination 4、5 | 
+| 38 | PaiGow46 | Two Dice Combination 4、6 | 
+| 39 | PaiGow56 | Two Dice Combination 5、6 | 
+| 40 | Pair1 | Pair 1 | 
+| 41 | Pair2 | Pair 2 | 
+| 42 | Pair3 | Pair 3 | 
+| 43 | Pair4 | Pair 4 | 
+| 44 | Pair5 | Pair 5 | 
+| 45 | Pair6 | Pair 6 | 
+| 46 | TripleAny | Any Triple | 
+| 47 | Triple1 | Specific Triple 1 | 
+| 48 | Triple2 | Specific Triple 2 | 
+| 49 | Triple3 | Specific Triple 3 | 
+| 50 | Triple4 | Specific Triple 4 | 
+| 51 | Triple5 | Specific Triple 5 | 
+| 52 | Triple6 | Specific Triple 6 | 
+| 53 | Hi | Hi | 
+| 54 | Lo | Lo | 
+| 55 | 11-Hi-Lo | 11-Hi-Lo | 
+| 56 | 1-Lo | 1-Lo | 
+| 57 | 2-Lo | 2-Lo | 
+| 58 | 3-Lo | 3-Lo | 
+| 59 | 4-Lo | 4-Lo | 
+| 60 | 5-Lo | 5-Lo | 
+| 61 | 6-Lo | 6-Lo | 
+| 62 | 1-Hi | 1-Hi | 
+| 63 | 2-Hi | 2-Hi | 
+| 64 | 3-Hi | 3-Hi | 
+| 65 | 4-Hi | 4-Hi | 
+| 66 | 5-Hi | 5-Hi | 
+| 67 | 6-Hi | 6-Hi | 
+| 68 | 1,2,3 | 1,2,3 | 
+| 69 | 2,3,4 | 2,3,4 | 
+| 70 | 3,4,5 | 3,4,5 | 
+| 71 | 4,5,6 | 4,5,6 |
+| 72 | HiLoThreeForces1 | Hi-Lo Three Forces 1 | 
+| 73 | HiLoThreeForces2 | Hi-Lo Three Forces 2 | 
+| 74 | HiLoThreeForces3 | Hi-Lo Three Forces 3 | 
+| 75 | HiLoThreeForces4 | Hi-Lo Three Forces 4 | 
+| 76 | HiLoThreeForces5 | Hi-Lo Three Forces 5 | 
+| 77 | HiLoThreeForces6 | Hi-Lo Three Forces 6 |  
+
+### Roulette(Game Type = 3)
+| id | name | Description |
+| --- | --- | --- |
+| 1 | 1 | Number 01 | 
+| 2 | 2 | Number 02 | 
+| 3 | 3 | Number 03 | 
+| 4 | 4 | Number 04 | 
+| 5 | 5 | Number 05 | 
+| 6 | 6 | Number 06 | 
+| 7 | 7 | Number 07 | 
+| 8 | 8 | Number 08 | 
+| 9 | 9 | Number 09 | 
+| 10 | 10 | Number 10 | 
+| 11 | 11 | Number 11 | 
+| 12 | 12 | Number 12 | 
+| 13 | 13 | Number 13 | 
+| 14 | 14 | Number 14 | 
+| 15 | 15 | Number 15 | 
+| 16 | 16 | Number 16 | 
+| 17 | 17 | Number 17 | 
+| 18 | 18 | Number 18 | 
+| 19 | 19 | Number 19 | 
+| 20 | 20 | Number 20 | 
+| 21 | 21 | Number 21 | 
+| 22 | 22 | Number 22 | 
+| 23 | 23 | Number 23 | 
+| 24 | 24 | Number 24 | 
+| 25 | 25 | Number 25 | 
+| 26 | 26 | Number 26 | 
+| 27 | 27 | Number 27 | 
+| 28 | 28 | Number 28 | 
+| 29 | 29 | Number 29 | 
+| 30 | 30 | Number 30 | 
+| 31 | 31 | Number 31 | 
+| 32 | 32 | Number 32 | 
+| 33 | 33 | Number 33 | 
+| 34 | 34 | Number 34 | 
+| 35 | 35 | Number 35 | 
+| 36 | 36 | Number 36 | 
+| 37 | 0 | Number 0 | 
+| 38 | Big | High | 
+| 39 | Small | Low | 
+| 40 | Odd | Odd | 
+| 41 | Even | Even | 
+| 42 | Red | Red | 
+| 43 | Black | Black | 
+| 47 | Split_1_2 | Split(01,02) | 
+| 48 | Split_1_4 | Split(01,04) | 
+| 49 | Split_2_3 | Split(02,03) | 
+| 50 | Split_2_5 | Split(02,05) | 
+| 51 | Split_3_6 | Split(03,06) | 
+| 52 | Split_4_6 | Split(04,05) | 
+| 53 | Split_4_7 | Split(04,07) | 
+| 54 | Split_5_6 | Split(05,06) | 
+| 55 | Split_5_8 | Split(05,08) | 
+| 56 | Split_6_9 | Split(06,09) | 
+| 57 | Split_7_8 | Split(07,08) | 
+| 58 | Split_7_10 | Split(07,10) | 
+| 59 | Split_8_9 | Split(08,09) | 
+| 60 | Split_8_11 | Split(08,11) | 
+| 61 | Split_9_12 | Split(09,12) | 
+| 62 | Split_10_11 | Split(10,11) | 
+| 63 | Split_10_13 | Split(10,13) | 
+| 64 | Split_11_12 | Split(11,12) | 
+| 65 | Split_11_14 | Split(11,14) | 
+| 66 | Split_12_15 | Split(12,15) | 
+| 67 | Split_13_14 | Split(13,14) | 
+| 68 | Split_13_16 | Split(13,16) | 
+| 69 | Split_14_15 | Split(14,15) | 
+| 70 | Split_14_17 | Split(14,17) | 
+| 71 | Split_15_18 | Split(15,18) | 
+| 72 | Split_16_17 | Split(16,17) | 
+| 73 | Split_16_19 | Split(16,19) | 
+| 74 | Split_17_18 | Split(17,18) | 
+| 75 | Split_17_20 | Split(17,20) | 
+| 76 | Split_18_21 | Split(18,21) | 
+| 77 | Split_19_20 | Split(19,20) | 
+| 78 | Split_19_22 | Split(19,22) | 
+| 79 | Split_20_21 | Split(20,21) | 
+| 80 | Split_20_23 | Split(20,23) | 
+| 81 | Split_21_24 | Split(21,24) | 
+| 82 | Split_22_23 | Split(22,23) | 
+| 83 | Split_22_25 | Split(22,25) | 
+| 84 | Split_23_24 | Split(23,24) | 
+| 85 | Split_23_26 | Split(23,26) | 
+| 86 | Split_24_27 | Split(24,27) | 
+| 87 | Split_25_26 | Split(25,26) | 
+| 88 | Split_25_28 | Split(25,28) | 
+| 89 | Split_26_27 | Split(26,27) | 
+| 90 | Split_26_29 | Split(26,29) | 
+| 91 | Split_27_30 | Split(27,30) | 
+| 92 | Split_28_29 | Split(28,29) | 
+| 93 | Split_28_31 | Split(28,31) | 
+| 94 | Split_29_30 | Split(29,30) | 
+| 95 | Split_29_32 | Split(29,32) | 
+| 96 | Split_30_33 | Split(30,33) | 
+| 97 | Split_31_32 | Split(31,32) | 
+| 98 | Split_31_34 | Split(31,34) | 
+| 99 | Split_32_33 | Split(32,33) | 
+| 100 | Split_32_35 | Split(32,35) | 
+| 101 | Split_33_36 | Split(33,36) | 
+| 102 | Split_34_35 | Split(34,35) | 
+| 103 | Split_35_36 | Split(35,36) | 
+| 104| ThreeNumber_0_1_2 | Three Number(00,01,02) | 
+| 105 | ThreeNumber_0_2_3 | Three Number(00,02,03) | 
+| 106 | Street_1 | Street(01,02,03) | 
+| 107 | Street_4 | Street(04,05,06) | 
+| 108 | Street_7 | Street(07,08,09) | 
+| 109 | Street_10 | Street(10,11,12) | 
+| 110 | Street_13 | Street(13,14,15) | 
+| 111 | Street_16 | Street(16,17,18) | 
+| 112 | Street_19 | Street(19,20,21) | 
+| 113 | Street_22 | Street(22,23,24) | 
+| 114 | Street_25 | Street(25,26,27) | 
+| 115 | Street_28 | Street(28,29,30) | 
+| 116 | Street_31 | Street(31,32,33) | 
+| 117 | Street_34 | Street(34,35,36) | 
+| 118 | FourNumber | Four Number(00,01,02,03) | 
+| 119 | Corner_3 | Corner(01,02,04,05) | 
+| 120| Corner_4 | Corner(02,03,05,06) | 
+| 121 | Corner_6 | Corner(04,05,07,08) | 
+| 122 | Corner_7 | Corner(05,06,08,09) | 
+| 123 | Corner_9 | Corner(07,08,10,11) | 
+| 124 | Corner_10 | Corner(08,09,11,12) | 
+| 125 | Corner_12 | Corner(10,11,13,14) | 
+| 126 | Corner_13 | Corner(11,12,14,15) | 
+| 127 | Corner_15 | Corner(13,14,16,17) | 
+| 128 | Corner_16 | Corner(14,15,17,18) | 
+| 129 | Corner_18 | Corner(16,17,19,20) | 
+| 130 | Corner_19 | Corner(17,18,20,21) | 
+| 131 | Corner_21 | Corner(19,20,22,23) | 
+| 132 | Corner_22 | Corner(20,21,23,24) | 
+| 133 | Corner_24 | Corner(22,23,25,26) | 
+| 134 | Corner_25 | Corner(23,24,26,27) | 
+| 135 | Corner_27 | Corner(25,26,28,29) | 
+| 136 | Corner_28 | Corner(26,27,29,30) | 
+| 137 | Corner_30 | Corner(28,29,31,32) | 
+| 138 | Corner_31 | Corner(29,30,32,33) | 
+| 139 | Corner_33 | Corner(31,32,34,35) | 
+| 140 | Corner_34 | Corner(32,33,35,36) | 
+| 141 | Line_1 | Line(01~06) | 
+| 142 | Line_4 | Line(04~09) | 
+| 143 | Line_7 | Line(07~12) | 
+| 144 | Line_10 | Line(10~15) | 
+| 145 | Line_13 | Line(13~18) | 
+| 146 | Line_16 | Line(16~21) | 
+| 147 | Line_19 | Line(19~24) | 
+| 148 | Line_22 | Line(22~27) | 
+| 149 | Line_25 | Line(25~30) | 
+| 150 | Line_28 | Line(28~33) | 
+| 151 | Line_31 | Line(31~36) | 
+| 152 | Dozen_1st | 1st Dozen | 
+| 153 | Dozen_2nd | 2nd Dozen | 
+| 154 | Dozen_3rd | 3rd Dozen| 
+| 155 | Column_1st | 1st Column | 
+| 156 | Column_2nd | 2nd Column | 
+| 157 | Column_3rd | 3rd Column | 
 
 
-### Sedie
+### Dragon Tiger(GameType = 5)
 
 | id | name | Description |
 | --- | --- | --- |
-| 192 | Big | High | 
-| 193 | Small | Low | 
-| 194 | Odd | Odd | 
-| 195 | Even | Even | 
-| 196 | Zero | Red 0 | 
-| 197 | One | Red 1 | 
-| 198 | Three | Red 3 | 
-| 199 | Four | Red 4 | 
+| 1  Dragon           | Dragon                 |
+| 2 | Tiger            | Tiger                  |
+| 3 | Tie | Tie |
 
-### Sicbo
+### Sedie(GameType = 6)
 
 | id | name | Description |
 | --- | --- | --- |
-| 200 | ThreeForces1 | Three Forces 1 | 
-| 201 | ThreeForces2 | Three Forces 2 | 
-| 202 | ThreeForces3 | Three Forces 3 | 
-| 203 | ThreeForces4 | Three Forces 4 | 
-| 204 | ThreeForces5 | Three Forces 5 | 
-| 205 | ThreeForces6 | Three Forces 6 | 
-| 206 | Big | Big | 
-| 207 | Small | Small | 
-| 208 | Odd | Odd | 
-| 209 | Even | Even | 
-| 210 | Total4 | Total of points is 4 | 
-| 211 | Total5 | Total of points is 5 | 
-| 212 | Total6 | Total of points is 6 | 
-| 213 | Total7 | Total of points is 7 | 
-| 214 | Total8 | Total of points is 8 | 
-| 215 | Total9 | Total of points is 9 | 
-| 216 | Total10 | Total of points is 10 | 
-| 217 | Total11 | Total of points is 11 | 
-| 218 | Total12 | Total of points is 12 | 
-| 219 | Total13 | Total of points is 13 | 
-| 220 | Total14 | Total of points is 14 | 
-| 221 | Total15 | Total of points is 15 | 
-| 222 | Total16 | Total of points is 16 | 
-| 223 | Total17 | Total of points is 17 | 
-| 224 | PaiGow12 | Two Dice Combination 1、2 | 
-| 225 | PaiGow13 | Two Dice Combination 1、3 | 
-| 226 | PaiGow14 | Two Dice Combination 1、4 | 
-| 227 | PaiGow15 | Two Dice Combination 1、5 | 
-| 228 | PaiGow16 | Two Dice Combination 1、6 | 
-| 229 | PaiGow23 | Two Dice Combination 2、3 | 
-| 230 | PaiGow24 | Two Dice Combination 2、4 | 
-| 231 | PaiGow25 | Two Dice Combination 2、5 | 
-| 232 | PaiGow26 | Two Dice Combination 2、6 | 
-| 233 | PaiGow34 | Two Dice Combination 3、4 | 
-| 234 | PaiGow35 | Two Dice Combination 3、5 | 
-| 235 | PaiGow36 | Two Dice Combination 3、6 | 
-| 236 | PaiGow45 | Two Dice Combination 4、5 | 
-| 237 | PaiGow46 | Two Dice Combination 4、6 | 
-| 238 | PaiGow56 | Two Dice Combination 5、6 | 
-| 239 | Pair1 | Pair 1 | 
-| 240 | Pair2 | Pair 2 | 
-| 241 | Pair3 | Pair 3 | 
-| 242 | Pair4 | Pair 4 | 
-| 243 | Pair5 | Pair 5 | 
-| 244 | Pair6 | Pair 6 | 
-| 245 | TripleAny | Any Triple | 
-| 246 | Triple1 | Specific Triple 1 | 
-| 247 | Triple2 | Specific Triple 2 | 
-| 248 | Triple3 | Specific Triple 3 | 
-| 249 | Triple4 | Specific Triple 4 | 
-| 250 | Triple5 | Specific Triple 5 | 
-| 251 | Triple6 | Specific Triple 6 | 
-| 252 | Hi | Hi | 
-| 253 | Lo | Lo | 
-| 254 | 11-Hi-Lo | 11-Hi-Lo | 
-| 255 | 1-Lo | 1-Lo | 
-| 256 | 2-Lo | 2-Lo | 
-| 257 | 3-Lo | 3-Lo | 
-| 258 | 4-Lo | 4-Lo | 
-| 259 | 5-Lo | 5-Lo | 
-| 260 | 6-Lo | 6-Lo | 
-| 261 | 1-Hi | 1-Hi | 
-| 262 | 2-Hi | 2-Hi | 
-| 263 | 3-Hi | 3-Hi | 
-| 264 | 4-Hi | 4-Hi | 
-| 265 | 5-Hi | 5-Hi | 
-| 266 | 6-Hi | 6-Hi | 
-| 267 | 1,2,3 | 1,2,3 | 
-| 268 | 2,3,4 | 2,3,4 | 
-| 269 | 3,4,5 | 3,4,5 | 
-| 270 | 4,5,6 | 4,5,6 |
-| 271 | HiLoThreeForces1 | Hi-Lo Three Forces 1 | 
-| 272 | HiLoThreeForces2 | Hi-Lo Three Forces 2 | 
-| 273 | HiLoThreeForces3 | Hi-Lo Three Forces 3 | 
-| 274 | HiLoThreeForces4 | Hi-Lo Three Forces 4 | 
-| 275 | HiLoThreeForces5 | Hi-Lo Three Forces 5 | 
-| 276 | HiLoThreeForces6 | Hi-Lo Three Forces 6 |  
+| 1 | Big | High | 
+| 2 | Small | Low | 
+| 3 | Odd | Odd | 
+| 4 | Even | Even | 
+| 5 | Zero | Red 0 | 
+| 6 | One | Red 1 | 
+| 7 | Three | Red 3 | 
+| 8 | Four | Red 4 | 
 
-
-### Speed Sicbo
+### Speed Sicbo(GameType = 7)
 
 | id | name | Description |
 | --- | --- | --- |
-| 277 | 1 | 1 | 
-| 278 | 2 | 2 | 
-| 279 | 3 | 3 | 
-| 280 | 4 | 4 | 
-| 281 | 5 | 5 | 
-| 282 | 6 | 6 | 
-| 283 | Big | High | 
-| 284 | Small | Low | 
-| 285 | Odd | Odd | 
-|286 | Even | Even | 
+| 1 | 1 | 1 | 
+| 2 | 2 | 2 | 
+| 3 | 3 | 3 | 
+| 4 | 4 | 4 | 
+| 5 | 5 | 5 | 
+| 6 | 6 | 6 | 
+| 7 | Big | High | 
+| 8 | Small | Low | 
+| 9 | Odd | Odd | 
+|10 | Even | Even | 
 
 ## Valid Bet Amount
 - The diff between Banker/Player, or High/Low. If a player place on the Banker 200 and on the Player 100 and game result is not tie. The valid bet amount would be 100 

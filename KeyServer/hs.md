@@ -1,4 +1,4 @@
-# XG Keyserver API 規格書
+# HSG Keyserver API 規格書
 
 ## chart
 
@@ -27,8 +27,8 @@ maintain--> |否| keypad_flow
 訊號目前是透過 `socket 協定` 傳輸，有可能會一次收到多筆 json 或是不完整的 json，目前訊號是透過斷行符號`/r/n`去分割訊息，這部份請自行處理或是利用自行利用 socket 相關的套件處理。
 
 ## API 位置
-- 測試: keyserver.jetcafe.life:2570
-- 正式機: keyserver.x-gaming.bet:2570
+- 測試: keyserver.olacak.live:2580
+- 正式機: keyserver.kasar.live:2580
 
 
 ## 維護
@@ -206,11 +206,11 @@ maintain--> |否| keypad_flow
 
 | 環境 | 位址 | 
 | -------- | -------- | 
-| Stage     | http://keypad.admin.jetcafe.life     | 
-| Production | http://keypad.admin.x-gaming.bet |
+| Stage     | http://keypad.admin.olacak.live     | 
+| Production | http://keypad.admin.kasar.live     |
 
 ### 取得路圖資料
-> GET /casino-api/v2/roadmap?tableId=F&round=1617867216&gameType=gameType
+> GET /casino-api/v2/roadmap/hs?tableId=F&round=1617867216&gameType=gameType
 
 #### Query string
 | 變數 | 型態 | 說明 |
@@ -227,7 +227,7 @@ maintain--> |否| keypad_flow
     {
       "TableName": "Baccarat", // 遊戲類型
       "HistoryId": 589927,     // 牌局紀錄編號
-      "TableId": "B",          // 桌號
+      "TableId": "BC01",          // 桌號
       "Round": 1602388403,     // 輪號
       "Run": 56,               // 局號
       "Result" : {
@@ -245,7 +245,7 @@ maintain--> |否| keypad_flow
 
 ### 取得改單資料
 建議每五分鐘調用一次即可
-> GET /casino-api/v2/modify-game?modifyTime=2020-10-10%2020:00:00
+> GET /casino-api/v2/modify-game/hs?modifyTime=2020-10-10%2020:00:00
 
 #### Query string
 
@@ -262,7 +262,7 @@ maintain--> |否| keypad_flow
     {
       "TableName": "Baccarat", // 遊戲類型
       "HistoryId": 589927,     // 牌局紀錄編號
-      "TableId": "B",          // 桌號
+      "TableId": "BC01",          // 桌號
       "Round": 1602388403,     // 輪號
       "Run": 56,               // 局號
       "Result" : {
@@ -280,7 +280,7 @@ maintain--> |否| keypad_flow
 
 
 ### 平板驗證
-> POST /casino-api/live-auth
+> POST /casino-api/live-auth/hs
 
 #### Request parameter
 
@@ -311,7 +311,7 @@ maintain--> |否| keypad_flow
 ### 查詢牌局
 
 ```
-GET /casino-api/v2/game-history?
+GET /casino-api/v2/game-history/hs?
     gameType=<gameType>&
     tableId=<tableId>&
     round=<round>&
@@ -338,7 +338,7 @@ GET /casino-api/v2/game-history?
     "data": {
         "TableName": "Baccarat", // 遊戲類型
         "HistoryId": 589927,     // 牌局紀錄編號
-        "TableId": "B",          // 桌號
+        "TableId": "BC01",          // 桌號
         "Round": 1602388403,     // 輪號
         "Run": 56,               // 局號
         "Result" : {
@@ -368,76 +368,81 @@ GET /casino-api/v2/game-history?
 ### 百家樂
 | 解析度 | 格式 | 範例 |
 | -------- | -------- | -------- |
-| 1080p     | https://play.xtremegaming.games/bacc/{桌號}-1080.flv     | https://play.xtremegaming.games/bacc/s-1080.flv     |
-| 720p     | https://play.xtremegaming.games/bacc/{桌號}-720.flv     | https://play.xtremegaming.games/bacc/s-720.flv     |
-| 480p     | https://play.xtremegaming.games/bacc/{桌號}-480.flv     | https://play.xtremegaming.games/bacc/s-480.flv     |
+| 1080p     | https://play.kasar.live/bacc/{桌號}-1080.flv     | https://play.kasar.live/bacc/bc01-1080.flv     |
+| 720p     | https://play.kasar.live/bacc/{桌號}-720.flv     | https://play.kasar.live/bacc/bc01-720.flv     |
+| 480p     | https://play.kasar.live/bacc/{桌號}-480.flv     | https://play.kasar.live/bacc/bc01-480.flv     |
 
 ### 龍虎
 | 解析度 | 格式 | 範例 |
 | -------- | -------- | -------- |
-| 1080p     | https://play.xtremegaming.games/dt/{桌號}-1080.flv     | https://play.xtremegaming.games/dt/a-1080.flv     |
-| 720p     | https://play.xtremegaming.games/dt/{桌號}-720.flv     | https://play.xtremegaming.games/dt/a-720.flv     |
-| 480p     | https://play.xtremegaming.games/dt/{桌號}-480.flv     | https://play.xtremegaming.games/dt/a-480.flv     |
+| 1080p     | https://play.kasar.live/dt/{桌號}-1080.flv     | https://play.kasar.live/dt/dt01-1080.flv     |
+| 720p     | https://play.kasar.live/dt/{桌號}-720.flv     | https://play.kasar.live/dt/dt01-720.flv     |
+| 480p     | https://play.kasar.live/dt/{桌號}-480.flv     | https://play.kasar.live/dt/dt01-480.flv     |
 
 ### 輪盤
 
 | 解析度 | 格式 | 範例 |
 | -------- | -------- | -------- |
-| 1080p     | https://play.xtremegaming.games/rt/{桌號}-1080.flv     | https://play.xtremegaming.games/rt/b-1080.flv     |
-| 720p     | https://play.xtremegaming.games/rt/{桌號}-720.flv     | https://play.xtremegaming.games/rt/b-720.flv     |
-| 480p     | https://play.xtremegaming.games/rt/{桌號}-480.flv     | https://play.xtremegaming.games/rt/b-480.flv     |
+| 1080p     | https://play.kasar.live/rt/{桌號}-1080.flv     | https://play.kasar.live/rt/rt01-1080.flv     |
+| 720p     | https://play.kasar.live/rt/{桌號}-720.flv     | https://play.kasar.live/rt/rt01-720.flv     |
+| 480p     | https://play.kasar.live/rt/{桌號}-480.flv     | https://play.kasar.live/rt/rt01-480.flv     |
 
 ### 色碟
 
 | 解析度 | 格式 | 範例 |
 | -------- | -------- | -------- |
-| 1080p     | https://play.xtremegaming.games/sd/{桌號}-1080.flv     | https://play.xtremegaming.games/sd/c-1080.flv     |
-| 720p     | https://play.xtremegaming.games/sd/{桌號}-720.flv     | https://play.xtremegaming.games/sd/c-720.flv     |
-| 480p     | https://play.xtremegaming.games/sd/{桌號}-480.flv     | https://play.xtremegaming.games/sd/c-480.flv     |
+| 1080p     | https://play.kasar.live/sd/{桌號}-1080.flv     | https://play.kasar.live/sd/sd01-1080.flv     |
+| 720p     | https://play.kasar.live/sd/{桌號}-720.flv     | https://play.kasar.live/sd/sd01-720.flv     |
+| 480p     | https://play.kasar.live/sd/{桌號}-480.flv     | https://play.kasar.live/sd/sd01-480.flv     |
 
 ### 骰寶
 
 | 解析度 | 格式 | 範例 |
 | -------- | -------- | -------- |
-| 1080p     | https://play.xtremegaming.games/sb/{桌號}-1080.flv     | https://play.xtremegaming.games/sb/v-1080.flv     |
-| 720p     | https://play.xtremegaming.games/sb/{桌號}-720.flv     | https://play.xtremegaming.games/sb/v-720.flv     |
-| 480p     | https://play.xtremegaming.games/sb/{桌號}-480.flv     | https://play.xtremegaming.games/sb/v-480.flv     |
-
+| 1080p     | https://play.kasar.live/sb/{桌號}-1080.flv     | https://play.kasar.live/sb/sb01-1080.flv     |
+| 720p     | https://play.kasar.live/sb/{桌號}-720.flv     | https://play.kasar.live/sb/sb01-720.flv     |
+| 480p     | https://play.kasar.live/sb/{桌號}-480.flv     | https://play.kasar.live/sb/sb01-480.flv     |
 
 
 ### 開放桌號
 
 #### 百家樂
-- E
-- F 
-- G
-- H
-- I
-- J
-- K
-- L
-- M
-- N
-- O
-- P
-` `
+- BC01
+- BC02
+- BC03
+- BC04
+- BC05
+- BC06
+- BC07
+- BC08
+- BC09
+- BC10
+- BC11
+- BC12
+- BC99(測試桌，只有測試環境有)
+
 #### 龍虎 
-- A
+- DT01
+- DT99(測試桌，只有測試環境有)
 
 #### 輪盤
-- B
+- RT01
+- RT99(測試桌，只有測試環境有)
 
 #### 色碟
-- C
-- D
+- SD01
+- SD02
+- SD99(測試桌，只有測試環境有)
 
 #### 骰寶
-- V
+- SB01
+- SB02
+- SB99(測試桌，只有測試環境有)
 
 ## 錄影位址
 
 ```text
-https://play.xtremegaming.games/<遊戲名稱代碼>/<桌號>/<輪號>/<輪號>-<局號>.mp4
+http:s//play.kasar.live/<遊戲名稱代碼>/<桌號>/<輪號>/<輪號>-<局號>.mp4
 ```
 桌號請參考[開放卓號](#開放桌號)，桌號需要轉小寫，遊戲名稱代碼請參考下方表格，輪號局號為API取得。
 ### 遊戲名稱代碼

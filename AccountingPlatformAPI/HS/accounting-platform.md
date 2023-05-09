@@ -17,30 +17,15 @@
 
 - 請詳閱[注意事項](../notice-cht.md)
 - 遊戲`桌台編號`請參考下表，實際開桌狀況以遊戲顯示為準
-
-    | Table Id            | 名稱            |
-    | ---------------- | ---------------------- |
-    | **Baccarat**     |                        |
-    | H | BC01 |
-    | E | BC02 |
-    | O | BC03 |
-    | P | BC04 |
-    | J | BC05(特色百家) |
-    | L | BC06 |
-    | G | BC07 |
-    | I | BC08(特色百家) |
-    | F | BC09 |
-    | K | BC10 |
-    | **DragonTiger**     |                        |
-    | A | DT01 |
-    | **Roulette**     |                        |
-    | B | RT01 |
-    | **Sicbo**     |                        |
-    | W | SB01 |
-    | V | SB02 |
-    | **Sedie**     |                        |
-    | C | SD01 |
-    | D | SD02 |
+ 
+    | 遊戲類別 | Table Id  |
+    | --- | --- |
+    | Baccarat | BC01, BC02, BC03, BC04, BC05, BC06, BC07, BC08, BC09, BC10，BC05, BC08 為特色百家|
+    | DragonTiger | DT01 |  
+    | Roulette | RT01 |  
+    | Sicbo | SB01, SB02 |  
+    | Sedie | SD01, SD02 |
+   
 
 - 支援幣別請參考下表，幣別代碼依照 [ISO_4217](https://en.wikipedia.org/wiki/ISO_4217) 制定
  
@@ -81,6 +66,7 @@
 - 到後台個人遊戲設定單一錢包 callbacks(getBalance/updateBalance)
 - 參考 [SeamlessWallet API 2.0](../../SeamlessWalletAPI2.0/SeamlessWalletAPI-2.0.md) 文件實作 `Get Balance` 及 `Update Balance` callbacks
 - update balance 只會呼叫一次，未避免發生重複結算金額，我方遇到 time out 或非預期的 response 等錯誤時不會重新呼叫，請錢包方定期調用 [GetRequestHistoryByTime api](https://staging-agent.olacak.live/swagger/public/index.html#/%E5%96%AE%E4%B8%80%E9%8C%A2%E5%8C%852.0/post_api_keno_api_casino_GetRequestHistoryByTime) 檢查我方呼叫失敗的紀錄，並依據 `RequestJson` 內容修正玩家額度
+- 後台 開發者專區/單一錢包設定/測試 提供一些測試案例，點擊按鈕會實際從我方 seamless server 發出 request 到貴系統，開發時可以依此進行測試，該測試僅供 staging 環境模擬發出相關測試案例時使用，不會產生實際注單
 - 請提供貴系統測試環境(staging)的測試帳號，我方將會安排測試 callbacks 是否正常運作
 
 ### 單一錢包1.1
@@ -90,6 +76,7 @@
 - 參考 [How to handle the balance of members](../../SeamlessWalletAPI1.x/handle-balance.md) 和 [XG Seamless Wallet API](https://github.com/jacky5823a/docs/blob/master/SeamlessWalletAPI1.x/SeamlessWallet1.1.md) 文件實作各類型 callbacks
 - 如果注單在結算前被取消，我方會調用 rollback 通知錢包方的系統
 - 如果注單在結算後被取消，我方不會通知錢包方，錢包方必須定期呼叫 [取得會員單注紀錄 API](https://staging-agent.olacak.live/swagger/public/index.html#/%E5%96%AE%E4%B8%80%E9%8C%A2%E5%8C%851.x/post_api_keno_api_casino_GetReplenishmentByTime) 檢查下注的 `ModifiedStatus`，並處理會員的額度
+- 後台 開發者專區/單一錢包設定/測試 提供一些測試案例，點擊按鈕會實際從我方 seamless server 發出 request 到貴系統，開發時可以依此進行測試，該測試僅供 staging 環境模擬發出相關測試案例時使用，不會產生實際注單
 - 請提供貴系統測試環境(staging)的測試帳號，我方將會安排測試 callbacks 是否正常運作
 
 ## 限紅說明

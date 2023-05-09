@@ -18,30 +18,14 @@ Please read the following notes before using our API.
 - Please read the [Notice](../notice-en.md) to get more information.
 - The following table presents the Table ID by game type in game. 
 
-    | Table Id            | 名稱            |
-    | ---------------- | ---------------------- |
-    | **Baccarat**     |                        |
-    | H | BC01 |
-    | E | BC02 |
-    | O | BC03 |
-    | P | BC04 |
-    | J | BC05 (feature baccarat)|
-    | L | BC06 |
-    | G | BC07 |
-    | I | BC08 (feature baccarat)|
-    | F | BC09 |
-    | K | BC10 |
-    | **DragonTiger**     |                        |
-    | A | DT01 |
-    | **Roulette**     |                        |
-    | B | RT01 |
-    | **Sicbo**     |                        |
-    | W | SB01 |
-    | V | SB02 |
-    | **Sedie**     |                        |
-    | C | SD01 |
-    | D | SD02 |
-
+    | Game Type | Table Id  |
+    | --- | --- |
+    | Baccarat | BC01, BC02, BC03, BC04, BC05, BC06, BC07, BC08, BC09, BC10，BC05, BC08 are the feature baccarat|
+    | DragonTiger | DT01 |  
+    | Roulette | RT01 |  
+    | Sicbo | SB01, SB02 |  
+    | Sedie | SD01, SD02 |
+    
 - The table below is supported currencies, and the currency code is refer to [ISO_4217](https://en.wikipedia.org/wiki/ISO_4217)
 
     | Code | Currency     |
@@ -81,6 +65,7 @@ Only transfer wallet agents available, please refer to [Transfer API](https://st
 - Please setting the seamless callbacks(getBalance/updateBalance) on the personal game setting page of the backstage. 
 - Refer to the [SeamlessWallet API 2.0](../../SeamlessWalletAPI2.0/SeamlessWalletAPI-2.0.md) documents to implement all of seamless callbacks.
 - Because of avoid settling repeatedly, our system only invokes the callback once when updating balance. If there is timeout or something unexpected response, our system won't re-invoke again. So please check the failed cases from [GetRequestHistoryByTime api](https://staging-agent.olacak.live/swagger/public/index.html?lang=en#/Seamless2.0/post_api_keno_api_xg_casino_GetRequestHistoryByTime) regularly, and according to the `RequestJson` in response to fix the balance of members.  
+- There are some test cases on the Developer Zone/Seamless Callbacks page. We'll send the request from our seamless server to your system when clicking the button in the test case. This is only for testing on the staging env, and there is no real bet record in our system.
 - Please provide test account on staging(test) environment of your system after completing all of seamless callbacks. We need to test its working fine on staging. 
 
 ### Seamless1.1
@@ -90,6 +75,7 @@ Only transfer wallet agents available, please refer to [Transfer API](https://st
 - Refer to the [How to handle the balance of members](../../SeamlessWalletAPI1.x/handle-balance.md) and [XG Seamless Wallet API ](https://github.com/jacky5823a/docs/blob/master/SeamlessWalletAPI1.x/SeamlessWallet1.1.md) documents to implement all of seamless callbacks.
 - If the game round canceled before settlement, our system will invoke the rollback callback.
 - If the bet canceled after settlement, our system doesn't inform your system by rollback callback. Your system needs to check the `ModifiedStatus` of bet by [GetReplenishmentByTime api](https://staging-agent.olacak.live/swagger/public/index.html?lang=en#/Seamless1.x/post_api_keno_api_xg_casino_GetReplenishmentByTime) regularly and handle the member's balance.
+- There are some test cases on the Developer Zone/Seamless Callbacks page. We'll send the request from our seamless server to your system when clicking the button in the test case. This is only for testing on the staging env, and there is no real bet record in our system.
 - Please provide test account on staging(test) environment of your system after completing all of seamless callbacks. We need to test its working fine on staging.
 
 ## Table Limit(Bet Limit)

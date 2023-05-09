@@ -81,6 +81,7 @@
 - 到後台個人遊戲設定單一錢包 callbacks(getBalance/updateBalance)
 - 參考 [SeamlessWallet API 2.0](../../SeamlessWalletAPI2.0/SeamlessWalletAPI-2.0.md) 文件實作 `Get Balance` 及 `Update Balance` callbacks
 - update balance 只會呼叫一次，未避免發生重複結算金額，我方遇到 time out 或非預期的 response 等錯誤時不會重新呼叫，請錢包方定期調用 [GetRequestHistoryByTime api](https://staging-agent.jetcafe.life/swagger/public/index.html#/%E5%96%AE%E4%B8%80%E9%8C%A2%E5%8C%852.0/post_api_keno_api_xg_casino_GetRequestHistoryByTime) 檢查我方呼叫失敗的紀錄，並依據 `RequestJson` 內容修正玩家額度
+- 後台 開發者專區/單一錢包設定/測試 提供一些測試案例，點擊按鈕會實際從我方 seamless server 發出 request 到貴系統，開發時可以依此進行測試，該測試僅供 staging 環境模擬發出相關測試案例時使用，不會產生實際注單
 - 請提供貴系統測試環境(staging)的測試帳號，我方將會安排測試 callbacks 是否正常運作
 
 ### 單一錢包 1.1
@@ -90,6 +91,7 @@
 - 參考 [How to handle the balance of members](../../SeamlessWalletAPI1.x/handle-balance.md) 和 [XG Seamless Wallet API](https://github.com/jacky5823a/docs/blob/master/SeamlessWalletAPI1.x/SeamlessWallet1.1.md) 文件實作各類型 callbacks
 - 如果注單在結算前被取消，我方會調用 rollback 通知錢包方的系統
 - 如果注單在結算後被取消，我方不會通知錢包方，錢包方必須定期呼叫 [取得會員單注紀錄 API](https://staging-agent.jetcafe.life/swagger/public/index.html#/%E5%96%AE%E4%B8%80%E9%8C%A2%E5%8C%851.x/post_api_keno_api_xg_casino_GetReplenishmentByTime) 檢查下注的 `ModifiedStatus`，並處理會員的額度
+- 後台 開發者專區/單一錢包設定/測試 提供一些測試案例，點擊按鈕會實際從我方 seamless server 發出 request 到貴系統，開發時可以依此進行測試，該測試僅供 staging 環境模擬發出相關測試案例時使用，不會產生實際注單
 - 請提供貴系統測試環境(staging)的測試帳號，我方將會安排測試 callbacks 是否正常運作
 
 ## 限紅說明
