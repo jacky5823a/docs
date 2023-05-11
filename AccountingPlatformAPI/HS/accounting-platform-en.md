@@ -33,6 +33,8 @@ Please read the following notes before using our API.
     | TWD  | Taiwan dollar   |
     | VND  | Vietnamese đồng   |
     | KVND  | 1000 VND   | 
+    | USD  | 美金   |
+    | USDT  | 泰達幣   |
 
 ## Encryption Flow
 
