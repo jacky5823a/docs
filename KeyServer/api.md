@@ -34,22 +34,22 @@ maintain--> |否| keypad_flow
 ## 維護
 | Field   | Type   | Description                   |
 | ------- | ------ |:----------------------------- |
-| command | string | [牌桌狀態指令](#牌桌狀態指令) |
-| type    | int    | [遊戲型別](#遊戲型別)         |
-|id|string|牌桌桌號(會與其他遊戲共用桌號, 非唯一值)|
-|time|timestamp|發送訊息時間|
-|payload|object|資料依[牌桌狀態指令](#牌桌狀態指令)而異|
-|&emsp;&emsp;maintenance|bool|是否維護中,true/false|
+| Command | string | [牌桌狀態指令](#牌桌狀態指令) |
+| Type    | int    | [遊戲型別](#遊戲型別)         |
+|Id|string|牌桌桌號(會與其他遊戲共用桌號, 非唯一值)|
+|Time|timestamp|發送訊息時間|
+|Payload|object|資料依[牌桌狀態指令](#牌桌狀態指令)而異|
+|&emsp;&emsp;Maintenance|bool|是否維護中,true/false|
 
 ```json=
 
 {
-    "command":"X900",
-    "type":1,
-    "id":"A",
-    "time":1602827720,
-    "payload":{
-        "maintenance": true // 維護狀態 true or false 
+    "Command":"X900",
+    "Type":1,
+    "Id":"A",
+    "Time":1602827720,
+    "Payload":{
+        "Maintenance": true // 維護狀態 true or false 
     }
 }
 
@@ -59,20 +59,20 @@ maintain--> |否| keypad_flow
 
 | Field   | Type   | Description                   |
 | ------- | ------ |:----------------------------- |
-| command | string | [牌桌狀態指令](#牌桌狀態指令) |
-| type    | int    | [遊戲型別](#遊戲型別)         |
-|id|string|牌桌桌號(會與其他遊戲共用桌號, 非唯一值)|
-|time|timestamp|發送訊息時間|
-|payload|object|資料依[牌桌狀態指令](#牌桌狀態指令)而異|
+| Command | string | [牌桌狀態指令](#牌桌狀態指令) |
+| Type    | int    | [遊戲型別](#遊戲型別)         |
+|Id|string|牌桌桌號(會與其他遊戲共用桌號, 非唯一值)|
+|Time|timestamp|發送訊息時間|
+|Payload|object|資料依[牌桌狀態指令](#牌桌狀態指令)而異|
 
 ```json=
 
 {
-    "command":"X000",
-    "type":1,
-    "id":"A",
-    "time":1602827720,
-    "payload":null
+    "Command":"X000",
+    "Type":1,
+    "Id":"A",
+    "Time":1602827720,
+    "Payload":null
 }
 
 ```
@@ -81,37 +81,37 @@ maintain--> |否| keypad_flow
 
 | Field   | Type   | Description                   |
 | ------- | ------ |:----------------------------- |
-| command | string | [牌桌狀態指令](#牌桌狀態指令) |
-| type    | int    | [遊戲型別](#遊戲型別)         |
-|id|string|牌桌桌號(會與其他遊戲共用桌號, 非唯一值)|
-|time|timestamp|發送訊息時間|
-|payload|object|資料依[牌桌狀態指令](#牌桌狀態指令)而異|
-|&emsp;&emsp;round|long|輪號|
-|&emsp;&emsp;run|int|局號|
-|&emsp;&emsp;status|int|[牌桌狀態](#牌桌狀態)|
-|&emsp;&emsp;bettime|int|開始下注至結束下注秒數|
-|&emsp;&emsp;cards|array|[數字牌型對應](#數字牌型對應)|
-|&emsp;&emsp;dealer|object|荷官資料，牌桌狀態為`compute`(6) 才會帶值，其餘為`null`|
-|&emsp;&emsp;&emsp;id|string|荷官ID|
-|&emsp;&emsp;&emsp;name|string|荷官姓名|
-|&emsp;&emsp;&emsp;photo|string|荷官圖片|
+| Command | string | [牌桌狀態指令](#牌桌狀態指令) |
+| Type    | int    | [遊戲型別](#遊戲型別)         |
+|Id|string|牌桌桌號(會與其他遊戲共用桌號, 非唯一值)|
+|Time|timestamp|發送訊息時間|
+|Payload|object|資料依[牌桌狀態指令](#牌桌狀態指令)而異|
+|&emsp;&emsp;Round|long|輪號|
+|&emsp;&emsp;Run|int|局號|
+|&emsp;&emsp;Status|int|[牌桌狀態](#牌桌狀態)|
+|&emsp;&emsp;BetTime|int|開始下注至結束下注秒數|
+|&emsp;&emsp;Cards|array|[數字牌型對應](#數字牌型對應)|
+|&emsp;&emsp;Dealer|object|荷官資料，牌桌狀態為`compute`(6) 才會帶值，其餘為`null`|
+|&emsp;&emsp;&emsp;Id|string|荷官ID|
+|&emsp;&emsp;&emsp;Name|string|荷官姓名|
+|&emsp;&emsp;&emsp;Photo|string|荷官圖片|
 
 ```json=
 {
-    "command":"X100",
-    "type":1,
-    "id":"A",
-    "time":1602827720,
-    "payload":{
-        "round":1602827707,
-        "run":1,
-        "status":1,
-        "bettime":30,
-        "cards":[12,23,0,11,34,0],
-        "dealer":{                 // if status is not compute(6), dealer will be null.
-            "id":"123456",
-            "name":"王小明"
-            "photo":"http://XXXX.XXX.jpg"
+    "Command":"X100",
+    "Type":1,
+    "Id":"A",
+    "Time":1602827720,
+    "Payload":{
+        "Round":1602827707,
+        "Run":1,
+        "Status":1,
+        "BetTime":30,
+        "Cards":[12,23,0,11,34,0],
+        "Dealer":{                 // if status is not compute(6), dealer will be null.
+            "Id":"123456",
+            "Name":"王小明"
+            "Photo":"http://XXXX.XXX.jpg"
         }
     }
 }
@@ -121,25 +121,25 @@ maintain--> |否| keypad_flow
 
 | Field   | Type   | Description                   |
 | ------- | ------ |:----------------------------- |
-| command | string | [牌桌狀態指令](#牌桌狀態指令) |
-| type    | int    | [遊戲型別](#遊戲型別)         |
-|id|string|牌桌桌號(會與其他遊戲共用桌號, 非唯一值)|
-|time|timestamp|發送訊息時間|
-|payload|object|資料依[牌桌狀態指令](#牌桌狀態指令)而異|
-|&emsp;&emsp;id|string|荷官ID|
-|&emsp;&emsp;name|string|荷官姓名|
-|&emsp;&emsp;photo|string|荷官圖片|
+| Command | string | [牌桌狀態指令](#牌桌狀態指令) |
+| Type    | int    | [遊戲型別](#遊戲型別)         |
+|Id|string|牌桌桌號(會與其他遊戲共用桌號, 非唯一值)|
+|Time|timestamp|發送訊息時間|
+|Payload|object|資料依[牌桌狀態指令](#牌桌狀態指令)而異|
+|&emsp;&emsp;Id|string|荷官ID|
+|&emsp;&emsp;Name|string|荷官姓名|
+|&emsp;&emsp;Photo|string|荷官圖片|
 
 ```json=
 {
-    "command":"X500",
-    "type":1,
-    "id":"A",
-    "time":1602827720,
-    "payload":{
-        "id":"123456",
-        "name":"王小明",
-        "photo":"http://XXXX.XXX.jpg"
+    "Command":"X500",
+    "Type":1,
+    "Id":"A",
+    "Time":1602827720,
+    "Payload":{
+        "Id":"123456",
+        "Name":"王小明",
+        "Photo":"http://XXXX.XXX.jpg"
     }
 }
 ```
