@@ -180,6 +180,13 @@ If a member place Banker 100, Banker 100, Banker Pair 100, there are two records
 | 24 | BankerPairNoRefund | Banker pair and no refund   |
 | 25 | PlayerPairNoRefund | Player Pair and no refund   |
 | 26 | Super6           | Super 6                |
+| 27 | AnyPair           | Any Pair                |
+| 28 | PerfectPairs           | Perfect Pairs                |
+| 29 | BankerBonus           | Banker Bonus                |
+| 30 | PlayerBonus           | Player Bonus                |
+| 31 | BankerNatural           | Banker Natural                |
+| 32 | PlayerNatural           | Player Natural                |
+| 33 | Lucky6           | Lucky 6                |
 
 ### Sicbo(GameType = 2)
 

@@ -181,6 +181,14 @@
 | 24 | BankerPairNoRefund | 莊對(免水)   |
 | 25 | PlayerPairNoRefund | 閒對(免水)   |
 | 26 | Super6           | 超級六                |
+| 27 | AnyPair           | 任意對子                |
+| 28 | PerfectPairs           | 完美對子                |
+| 29 | BankerBonus           | 莊龍寶                |
+| 30 | PlayerBonus           | 閒龍寶                |
+| 31 | BankerNatural           | 莊例牌                |
+| 32 | PlayerNatural           | 閒例牌                |
+| 33 | Lucky6           | 幸運六                |
+
 
 ### Sicbo(GameType = 2)
 
