@@ -468,7 +468,8 @@ If a member place Banker 100, Banker 100, Banker Pair 100, there are two records
 ## Valid Bet Amount
 - The diff between Banker/Player, or High/Low. If a player place on the Banker 200 and on the Player 100 and game result is not tie. The valid bet amount would be 100 
 - If the game result of Baccarat is tie, the valid bet amount of Banker and Player would be 0. If a player place on the Banker 200 and on the Player 200 and game result is tie, the valid bet amount would be 0
-- If the game result of DragonTiger is tie,  the valid bet amount would be the half of bet amount. If a player place on the Dragon 200 and game result is tie, the valid bet amount would be 100
+- If the game result of DragonTiger is tie, the valid bet amount would be the half of bet amount. If a player place on the Dragon 200 and game result is tie, the valid bet amount would be 100
+- If the game result of Se Die is 2 red and 2 white, the valid bet amount would be 0 for the High/Low spot 
 - Other than the conditions above, the valid bet amount would be as same as the bet amount
 
 
