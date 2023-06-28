@@ -167,7 +167,7 @@ Body
 | currency     | string     | player's currency     |
 | amount     | decimal(20, 4)     | win or loss amount     |
 | transactionId     | Guid     | uniqe id of each betting process  |
-| wagerId     | loong     | Bet ticket number, equal  BetFormId |
+| wagerId     | string     | Bet ticket , equal  BetFormId |
 
 #### Response
 
@@ -205,14 +205,14 @@ Request example
       "currency": "USD",
       "transactionId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
       "user": "jacky11",
-      "wagerId": 71111
+      "wagerId": "P81RFZ157G77TFF4U81"
     },
     {
       "amount": 0,
       "currency": "USD",
       "transactionId": "152c1c9f-6662-498a-ae1b-73bb706de0b0",
       "user": "jacky22",
-      "wagerId": 71112
+      "wagerId": "P81RFZ157G77TFF4U81"
     }
   ],
   "settleTime": "2021-08-30T16:41:27.0531715+08:00"

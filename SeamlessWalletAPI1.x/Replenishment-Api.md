@@ -54,7 +54,7 @@ Token驗證方式
       "settleTime": "2021/07/05 03:18:51",
       "table": "R",
       "transactionId": "c2a95054-1bea-4e53-bd2d-48d271bc90be",
-      "wagerId": 17725961
+      "wagerId": "P81RFZ157G77TFF4U81"
     },
     {
       "bet": "Baccarat_PlayerPair",
@@ -70,7 +70,7 @@ Token驗證方式
       "settleTime": "2021/07/03 22:19:30",
       "table": "R",
       "transactionId": "66ade8a1-7c13-4429-b7b7-f061e66b6d7e",
-      "wagerId": 17725962,
+      "wagerId": "P81RFZ157G77TFF4U81",
       "modifiedStatus": "Canceled"
     }
   ],

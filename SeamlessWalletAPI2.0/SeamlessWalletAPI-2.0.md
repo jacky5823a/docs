@@ -69,7 +69,7 @@ HTTP Request Method: Post
 | TableId | string | [Table ID](#https://github.com/jacky5823a/docs/blob/master/AccountingPlatformAPI/XG/accounting-platform-en.md#notice) by game type in game |
 | Account | string | player's account |
 | ModifiedStatus | string | modified or canceled (*Rollback only*) |
-| BetFormId | long | Group Id by player in Single run *(Settlement) (Rollback)* |
+| BetFormId | string | Group Id by player in Single run *(Settlement) (Rollback)* |
 | Transactions| [TransactionItem](#transactionItem)[]|[TransactionItem](#transactionItem) Array|
 
 #### TransactionItem
@@ -141,7 +141,7 @@ Amount = Sum(betAmount+settleAmount)
 ```json
 {
   "Account": "player1",
-  "BetFormId": 111,
+  "BetFormId": "P81RFZDLRBSY6OVMWHT",
   "Transactions": [
     {
       "TransactionId": "566105bf-2349-439b-ac14-00becdcec0cc",
@@ -160,7 +160,7 @@ Amount = Sum(betAmount+settleAmount)
 ```json
 {
   "Account": "player2",
-  "BetFormId": 111,
+  "BetFormId": "P81RFZDLRBSY6OVMWHT",
   "Transactions": [
     {
       "TransactionId": "566105bf-2349-439b-ac14-00becdcec0cc",
@@ -186,7 +186,7 @@ There are three situation will trigger rollback case, our system will invoke api
 ```json
 {
   "Account": "player1",
-  "BetFormId": 111,
+  "BetFormId": "P81RFZDLRBSY6OVMWHT",
   "ModifiedStatus": "modified",
   "Transactions": [
     {
@@ -206,7 +206,7 @@ There are three situation will trigger rollback case, our system will invoke api
 ```json
 {
   "Account": "player2",
-  "BetFormId": 111,
+  "BetFormId": "P81RFZDLRBSY6OVMWHT",
   "ModifiedStatus": "modified",
   "Transactions": [
     {
