@@ -47,6 +47,7 @@ Please read the following notes before using our API.
     |PHP|Philippine peso|
     | KIDR  | 1000 IDR   |
     | KVND  | 1000 VND   | 
+    | BRL | Brazilian real |
 
 ## Encryption Flow
 
