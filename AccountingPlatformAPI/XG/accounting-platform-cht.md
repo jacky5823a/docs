@@ -53,7 +53,7 @@
 
 我們提供快速生成 `Key` 的套件（套件另外包含生成單一錢包所需的 `token`），使用方式參見各專案，目前支援以下語言:
 
-- [JAVA XG Token](https://gitlab.kaixi.cc/api-libaray/java-xg-token)
+- [JAVA XG Token](https://gitlab.com/token-library/java/-/packages/6250338)
 - [PHP XG Token](https://gitlab.kaixi.cc/api-libaray/php-xg-token)
 - [Node.js XG Token](https://gitlab.kaixi.cc/api-libaray/js-xg-token)
 - [C# XG Token](https://gitlab.kaixi.cc/api-libaray/csharp-xg-token)

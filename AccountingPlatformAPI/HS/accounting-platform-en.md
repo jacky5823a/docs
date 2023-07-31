@@ -40,7 +40,7 @@ Please read the following notes before using our API.
 
 We provide some simple libraries to generate `Key`(Those libraries also support to generate `token` for seamless callbacks). The following languages are currently supported:
 
-- [JAVA Token](https://gitlab.com/token-library/java/-/wikis/README)
+- [JAVA Token](https://gitlab.com/token-library/java/-/packages/6250338)
 - [PHP Token](https://gitlab.com/token-library/php-token)
 - [Node.js Token](https://gitlab.com/token-library/js-token)
 - [C# Token](https://gitlab.com/token-library/csharp-token)
