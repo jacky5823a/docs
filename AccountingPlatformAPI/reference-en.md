@@ -76,6 +76,7 @@
 | ja    | Japanese             |
 | vi / vn   | Vietnamese           |
 | ms | Malay |
+| pt | Portuguese |
 
 
 ## Game Result
