@@ -25,8 +25,9 @@
     | Roulette | B |  
     | Sicbo | V, W |  
     | Sedie | C, D |
- 支援幣別請參考下表，幣別代碼依照 [ISO_4217](https://en.wikipedia.org/wiki/ISO_4217) 制定
- 
+
+- 支援幣別請參考下表，幣別代碼依照 [ISO_4217](https://en.wikipedia.org/wiki/ISO_4217) 制定
+
      | 代碼 | 幣別     |
      | ---- | -------- |
      | CNY  | 人民幣   |
