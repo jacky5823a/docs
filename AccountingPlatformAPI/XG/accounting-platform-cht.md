@@ -25,7 +25,7 @@
     | Roulette | B |  
     | Sicbo | V, W |  
     | Sedie | C, D |
-- 支援幣別請參考下表，幣別代碼依照 [ISO_4217](https://en.wikipedia.org/wiki/ISO_4217) 制定
+ 支援幣別請參考下表，幣別代碼依照 [ISO_4217](https://en.wikipedia.org/wiki/ISO_4217) 制定
  
      | 代碼 | 幣別     |
      | ---- | -------- |
@@ -47,7 +47,10 @@
      | KIDR  | 千印尼盾   |
      | KVND  | 千越南盾   |
      | BRL | 巴西黑奧 |
-
+     | PEN | 秘魯新索爾 |
+     | BOB | 玻利維亞諾 |
+     | COP | 哥倫比亞披索 |
+     | PYG | 巴拉圭瓜拉尼 |
 
 ## 加密流程
 
