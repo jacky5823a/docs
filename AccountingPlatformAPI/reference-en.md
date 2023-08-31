@@ -65,18 +65,18 @@
 
 ## Game Languages
 
-| Code  | Description          |
-| ----- | -------------------- |
-| zh-CN | Simple Chinese       |
-| zh-TW | Tranditional Chinese |
-| en / en-US | English              |
-| th    | Thai                 |
-| id    | Indonesian           |
-| ko    | Korean               |
-| ja    | Japanese             |
-| vi / vn   | Vietnamese           |
-| ms | Malay |
-| pt | Portuguese |
+| Code        | Description          |
+|-------------| -------------------- |
+| zh-CN       | Simple Chinese       |
+| zh-TW       | Tranditional Chinese |
+| en or en-US | English              |
+| th          | Thai                 |
+| id          | Indonesian           |
+| ko          | Korean               |
+| ja          | Japanese             |
+| vi or vn    | Vietnamese           |
+| ms          | Malay |
+| pt          | Portuguese |
 
 
 ## Game Result

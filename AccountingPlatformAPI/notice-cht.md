@@ -23,6 +23,8 @@ API 支援語系切換,只需 request 參數中加上 `ApiLang` 或 `lang`參數
 - zh-CN:簡體(預設值)
 - zh-TW:繁體
 - en-US:英文
+- ja:日文
+- vi:越南文
 
 ## Request
 - 所有請求需要包含以下參數，`Key` 生成方式請參考加密流程

@@ -23,6 +23,8 @@ Append the `ApiLang` or `lang` parameter in the request if you'd like to switch 
 - zh-CN: Simplified Chinese (default)
 - zh-TW: Traditional Chinese
 - en: English
+- ja: Japanese
+- vi: Vietnamese
 
 ## Request
 - All requests include the following parameters. Please follow the encryption flow to generate the `Key`.
