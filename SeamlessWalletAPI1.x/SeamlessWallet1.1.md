@@ -303,7 +303,7 @@ Response example
 
 We provide X-API-TOKEN generation plugin:
 
-[JAVA Token](https://gitlab.kaixi.cc/api-libaray/java-xg-token)
+[JAVA Token](https://gitlab.com/token-library/java/-/packages/6250338)
 
 [PHP Token](https://gitlab.kaixi.cc/api-libaray/php-xg-token)
 
