@@ -89,9 +89,9 @@
 - 後台 開發者專區/單一錢包設定/測試 提供一些測試案例，點擊按鈕會實際從我方 seamless server 發出 request 到貴系統，開發時可以依此進行測試，該測試僅供 staging 環境模擬發出相關測試案例時使用，不會產生實際注單
 - 請提供貴系統測試環境(staging)的測試帳號，我方將會安排測試 callbacks 是否正常運作
 
-### 單一錢包 1.1
+### 單一錢包 1.1(EOL)
 
-- 單一錢包代理才能使用，1.0 版本於 2022-10-17 後將被棄用，請升級到 1.1 或 2.0
+- 1.1 版本不再進行功能更新，請升級到 2.0
 - 到後台個人遊戲設定單一錢包 callbacks(balance/bet/settle/rollback)
 - 參考 [How to handle the balance of members](../../SeamlessWalletAPI1.x/handle-balance.md) 和 [XG Seamless Wallet API](https://github.com/jacky5823a/docs/blob/master/SeamlessWalletAPI1.x/SeamlessWallet1.1.md) 文件實作各類型 callbacks
 - 如果注單在結算前被取消，我方會調用 rollback 通知錢包方的系統

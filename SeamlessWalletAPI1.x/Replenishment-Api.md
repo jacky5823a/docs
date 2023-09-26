@@ -1,4 +1,5 @@
-# Replenishment Api
+# Replenishment Api(EOL)
+**注意：1.1 版本不再進行功能更新，請升級到 2.0**
 
 遊戲方提供給錢包方請求查詢單一錢包注單資訊Api
 

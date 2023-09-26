@@ -70,9 +70,10 @@ Only transfer wallet agents available, please refer to [Transfer API](https://st
 - There are some test cases on the Developer Zone/Seamless Callbacks page. We'll send the request from our seamless server to your system when clicking the button in the test case. This is only for testing on the staging env, and there is no real bet record in our system.
 - Please provide test account on staging(test) environment of your system after completing all of seamless callbacks. We need to test its working fine on staging. 
 
-### Seamless1.1
+### Seamless1.1(EOL)
 
-- Only Seamless wallet agents available. The 1.0 version was deprecated, and our system force upgraded to the 1.1 version after 2022-10-17.
+- The 1.1 version will no longer be updated, please upgrade to the 2.0 version.
+- Only Seamless wallet agents available.
 - Please setting the seamless callbacks(balance/bet/settle/rollback) on the personal game setting page of the backstage. 
 - Refer to the [How to handle the balance of members](../../SeamlessWalletAPI1.x/handle-balance.md) and [XG Seamless Wallet API ](https://github.com/jacky5823a/docs/blob/master/SeamlessWalletAPI1.x/SeamlessWallet1.1.md) documents to implement all of seamless callbacks.
 - If the game round canceled before settlement, our system will invoke the rollback callback.

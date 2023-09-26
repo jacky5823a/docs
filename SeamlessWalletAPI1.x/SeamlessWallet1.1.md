@@ -1,4 +1,6 @@
-# Seamless Wallet API 1.1
+# Seamless Wallet API 1.1(EOL)
+
+**NOTICE: The 1.1 version will no longer be updated, please upgrade to the 2.0 version.**
 
 ## GetBalance
 

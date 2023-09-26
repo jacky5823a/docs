@@ -1,4 +1,6 @@
-# How to handle the balance of members for Seamless Wallet
+# How to handle the balance of members for Seamless Wallet(EOL)
+
+**NOTICE: The 1.1 version will no longer be updated, please upgrade to the 2.0 version.**
 
 This doucment provide a simple case to explain how the seamless callbacks and replenishment api work of our system.
 
