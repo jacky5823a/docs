@@ -1,4 +1,17 @@
-# Key 產生方式
+# 加密流程
+
+我們提供快速生成 `Key` 的套件（套件另外包含生成單一錢包所需的 `token`），使用方式參見各專案，目前支援以下語言:
+
+- [JAVA XG Token](https://gitlab.com/token-library/java/-/packages/17448487)
+- [PHP XG Token](https://gitlab.com/token-library/php-token)
+- [Node.js XG Token](https://gitlab.com/token-library/js-token)
+- [C# XG Token](https://gitlab.com/token-library/csharp-token)
+
+如果尚未支援的語言或是想自行處理，請按照下方 [Key 產生方式](#key-產生方式) 步驟
+
+後台 開發者專區/API KEY 產生器 頁面可自行比對產出的 `Key` 是否正確
+
+## Key 產生方式
 
 Key = {6個任意字元} + MD5(所有請求參數串 + KeyG) + {6個任意字元}
 
@@ -34,7 +47,7 @@ Key = {6個任意字元} + MD5(所有請求參數串 + KeyG) + {6個任意字元
     - 日期格式為 `yyMMd`，例如：
       2018/2/7 => 18027, 7 號是 `7` 而不是 `07`
       2018/2/18 => 180218
-## 範例
+### 範例
 
 以下使用 nodejs 及 [Luxon](https://github.com/moment/luxon) 時間套件進行加密範例
 
@@ -65,3 +78,5 @@ requestData.Key = Math.random().toString(36).substr(2,6) + md5(paramsString + ke
 ...
 
 ```
+
+

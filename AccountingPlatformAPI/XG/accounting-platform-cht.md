@@ -1,7 +1,7 @@
 # 帳務平台 API
 
 - [注意事項](#注意事項)
-- [加密流程](#加密流程)
+- [加密流程](../encryption-cht.md)
 - [API規格](#API規格) 
     - [會員&代理](#會員代理)
     - [注單查詢](#注單查詢)
@@ -51,19 +51,6 @@
      | BOB | 玻利維亞諾 |
      | COP | 哥倫比亞披索 |
      | PYG | 巴拉圭瓜拉尼 |
-
-## 加密流程
-
-我們提供快速生成 `Key` 的套件（套件另外包含生成單一錢包所需的 `token`），使用方式參見各專案，目前支援以下語言:
-
-- [JAVA XG Token](https://gitlab.com/token-library/java/-/packages/17448487)
-- [PHP XG Token](https://gitlab.kaixi.cc/api-libaray/php-xg-token)
-- [Node.js XG Token](https://gitlab.kaixi.cc/api-libaray/js-xg-token)
-- [C# XG Token](https://gitlab.kaixi.cc/api-libaray/csharp-xg-token)
-
-如果尚未支援的語言或是想自行處理，請按照[此份文件生成 `Key`](../encryption-cht.md)
-
-後台 開發者專區/API KEY 產生器 頁面可自行比對產出的 `Key` 是否正確
 
 ## API 規格 
 

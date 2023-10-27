@@ -1,4 +1,17 @@
-# How to generate the key
+# Encryption Flow
+
+We provide some simple libraries to generate `Key`(Those libraries also support to generate `token` for seamless callbacks). The following languages are currently supported:
+
+- [JAVA XG Token](https://gitlab.com/token-library/java/-/packages/17448487)
+- [PHP XG Token](https://gitlab.com/token-library/php-token)
+- [Node.js XG Token](https://gitlab.com/token-library/js-token)
+- [C# XG Token](https://gitlab.com/token-library/csharp-token)
+
+If the language of library hasn't supported or you'd like to handle it yourself, please follow [How to generate the key](#how-to-generate-the-key)
+
+If needs to check the the `Key` you generate. Please go to the the Developer Zone/API Key Generator page of our backoffice. 
+
+## How to generate the key
 
 Key = {6 arbitrary characters} + MD5(all request parameter list strings + KeyG) + {6 arbitrary characters}
 
@@ -35,7 +48,7 @@ Key = {6 arbitrary characters} + MD5(all request parameter list strings + KeyG) 
       2018/2/7 => the 7th would be `7`, not `07`
       2018/2/18 => 180218
       
-## Example
+### Example
 
 The following is an example for encryption flow which using nodejs and [Luxon](https://github.com/moment/luxon)
 

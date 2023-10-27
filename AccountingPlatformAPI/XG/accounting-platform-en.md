@@ -1,7 +1,7 @@
 # Accounting Platform API
 
 - [Notice](#Notice)
-- [Encryption Flow](#Encryption-Flow)
+- [Encryption Flow](../encryption-en.md)
 - [API Spec](#API-Spec) 
     - [Member&Agent](#MemberAgent)
     - [Wager](#Wager)
@@ -51,17 +51,6 @@ Please read the following notes before using our API.
     | BOB | Bolivian boliviano   |
     | COP | Colombian peso       |
     | PYG | Paraguayan guarani   |   
-
-## Encryption Flow
-
-We provide some simple libraries to generate `Key`(Those libraries also support to generate `token` for seamless callbacks). The following languages are currently supported:
-
-- [JAVA XG Token](https://gitlab.com/token-library/java/-/packages/17448487)
-- [PHP XG Token](https://gitlab.kaixi.cc/api-libaray/php-xg-token)
-- [Node.js XG Token](https://gitlab.kaixi.cc/api-libaray/js-xg-token)
-- [C# XG Token](https://gitlab.kaixi.cc/api-libaray/csharp-xg-token)
-
-If the language of library hasn't supported or you'd like to handle it yourself, please follow [this doc to generate the `Key`](../encryption-en.md)
 
 ## API Spec
 

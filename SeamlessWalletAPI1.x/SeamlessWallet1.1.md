@@ -307,11 +307,11 @@ We provide X-API-TOKEN generation plugin:
 
 [JAVA Token](https://gitlab.com/token-library/java/-/packages/17448487)
 
-[PHP Token](https://gitlab.kaixi.cc/api-libaray/php-xg-token)
+[PHP Token](https://gitlab.com/token-library/php-token)
 
-[Node.js Token](https://gitlab.kaixi.cc/api-libaray/js-xg-token)
+[Node.js Token](https://gitlab.com/token-library/js-token)
 
-[C# Token](https://gitlab.kaixi.cc/api-libaray/csharp-xg-token)
+[C# Token](https://gitlab.com/token-library/csharp-token)
 
 For languages that are not yet supported, please refer to the following generate process¡G
 

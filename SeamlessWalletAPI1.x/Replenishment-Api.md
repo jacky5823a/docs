@@ -13,11 +13,11 @@ decimal欄位皆必須精準至小數後四位，example 200.0000
 Token驗證方式
 
 我們提供快速生成 X-API-TOKEN 的套件，使用方式參見各專案，目前支援以下語言:
+- [JAVA XG Token](https://gitlab.com/token-library/java/-/packages/17448487)
+- [PHP XG Token](https://gitlab.com/token-library/php-token)
+- [Node.js XG Token](https://gitlab.com/token-library/js-token)
+- [C# XG Token](https://gitlab.com/token-library/csharp-token)
 
-[JAVA XG Token](https://gitlab.com/token-library/java/-/packages/17448487)
-[PHP XG Token](https://gitlab.kaixi.cc/api-libaray/php-xg-token)
-[Node.js XG Token](https://gitlab.kaixi.cc/api-libaray/js-xg-token)
-[C# XG Token](https://gitlab.kaixi.cc/api-libaray/csharp-xg-token)
 如果尚未支援的語言或是想自行處理，可參考下列流程生成：
 
 ## Get
