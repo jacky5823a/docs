@@ -19,6 +19,42 @@
 
 - Payload:
   - GET: query string, ex: `account=Test1&lang=zh-CN`
-  - POST: JSON decode the request body, ex: `{"account":"Test1","lang":"zh-CN"}`
+  - POST: JSON encode the request body, ex: `{"account":"Test1","lang":"zh-CN"}`
 - Message = {Agent ID} + {Payload} + {Request Unix Timestamp(秒)}
 - Signature = Base64(HMAC-SHA-256({Agent Key}, {Message}))
+
+### 範例
+
+以下使用 nodejs 及 [crypto-js](https://www.npmjs.com/package/crypto-js) 套件產生 Signature
+
+```javascript
+const axios = require('axios');
+const base64 = require('crypto-js/enc-base64');
+const hmacSha256 = require('crypto-js/hmac-sha256');
+
+const agentId = 'Your AgentId';
+const agentKey = 'Your AgentKey';
+
+const requestData = {
+    'parameter1': 'value1',
+    'parameter2': 'value2',
+    'parameter3': 'value3'
+};
+const payload = JSON.stringify(requestData);
+const requestTimestamp = Math.floor(Date.now() / 1000);
+
+const message = agentId + payload + requestTimestamp;
+const signature = base64.stringify(hmacSha256(message, agentKey));
+
+// 發請請求
+axios.post('api-url', requestData, {
+  headers: {
+    'Content-Type': 'application/json',
+    'X-Agent-Id': agentId,
+    'X-Agent-Timestamp': requestTimestamp,
+    'X-Agent-Signature': signature,
+  }
+});
+```
+
+
