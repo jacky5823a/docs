@@ -2,10 +2,10 @@
 
 我們提供快速生成 `Key` 的套件（套件另外包含生成單一錢包所需的 `token`），使用方式參見各專案，目前支援以下語言:
 
-- [JAVA XG Token](https://gitlab.com/token-library/java/-/packages/17448487)
-- [PHP XG Token](https://gitlab.com/token-library/php-token)
-- [Node.js XG Token](https://gitlab.com/token-library/js-token)
-- [C# XG Token](https://gitlab.com/token-library/csharp-token)
+- [JAVA Token](https://gitlab.com/token-library/java/-/packages/17448487)
+- [PHP Token](https://gitlab.com/token-library/php-token)
+- [Node.js Token](https://gitlab.com/token-library/js-token)
+- [C# Token](https://gitlab.com/token-library/csharp-token)
 
 如果尚未支援的語言或是想自行處理，請按照下方 [Key 產生方式](#key-產生方式) 步驟
 
