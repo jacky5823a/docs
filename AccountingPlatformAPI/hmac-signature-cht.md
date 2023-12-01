@@ -26,14 +26,13 @@
 
 ### 範例
 
-以下使用 nodejs 及 [crypto-js](https://www.npmjs.com/package/crypto-js) 套件產生 Signature，並使用 [qs](https://github.com/ljharb/qs) 及 [axios](https://github.com/axios/axios) 發送 HTTP Request。
+以下使用 nodejs 及 [crypto-js](https://www.npmjs.com/package/crypto-js) 套件產生 Signature，並使用 [axios](https://github.com/axios/axios) 發送 HTTP Request。
 
 #### Query string(GET)
 ```javascript
 const axios = require('axios');
 const base64 = require('crypto-js/enc-base64');
 const hmacSha256 = require('crypto-js/hmac-sha256');
-const qs = require('qs');
 
 const agentId = 'Your AgentId';
 const agentKey = 'Your AgentKey';
@@ -43,21 +42,20 @@ const params = {
   'parameter2': 'value2',
   'parameter3': 'value3'
 };
-const payload = qs.stringify(params, { encode: false });
+const payload = new URLSearchParams(params).toString();
 const requestTimestamp = Math.floor(Date.now() / 1000);
 
 const message = agentId + payload + requestTimestamp;
 const signature = base64.stringify(hmacSha256(message, agentKey));
 
 // Send request
-await axios.get('api-url', params, {
+await axios.get('api-url', new URLSearchParams(params), {
     headers: {
         'Content-Type': 'application/json',
         'X-Agent-Id': agentId,
         'X-Agent-Timestamp': requestTimestamp,
         'X-Agent-Signature': signature,
-    },
-    paramsSerializer: (params) => qs.stringify(params, { encode: false })
+    }
 });
 ```
 
